@@ -9,8 +9,9 @@ nav{
     background-image: -moz-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
     background-image: -webkit-linear-gradient(top, #363634 0%, #7A7A7A 100%);
     background-image: -ms-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
-    background-image: linear-gradient(to bottom, #363634 0%, #7A7A7A 100%);
-    
+    background-image: linear-gradient(to bottom, #363634 0%, #7A7A7A 100%);    
+    /*background-image: url('../img/background.png');*/
+
     color: white;
     border-bottom: 1px solid #5C5C5C;
     text-align: center;
@@ -105,6 +106,7 @@ nav{
     background-image: -webkit-linear-gradient(top, #363634 0%, #7A7A7A 100%);
     background-image: -ms-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
     background-image: linear-gradient(to bottom, #363634 0%, #7A7A7A 100%);
+    /*background-image: url('../img/background.png');*/
     color: white;
     padding: 1em 0;
     text-align: center;
