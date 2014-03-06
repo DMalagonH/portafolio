@@ -9,6 +9,7 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link href="css/portafolio.css" rel="stylesheet">
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,31 +22,39 @@
     <body>
         <nav>
             <ul id="nav-list">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> <span class="hidden-xs">Yo</span></a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> <span class="hidden-xs">Yo</span></a></li>
                 <li class='item-nav-border'><a href="#"><span class="glyphicon glyphicon-th-list"></span> <span class="hidden-xs">Portafolio</span></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-comment"></span> <span class="hidden-xs">Contacto</span></a></li>
+                <li class=""><a href="#"><span class="glyphicon glyphicon-comment"></span> <span class="hidden-xs">Contacto</span></a></li>
             </ul>
         </nav>
-        <header id="header-avatar">
-            <section id="header-avatar-container">                
-                <figure>
-                    <!--<img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0" alt="Diego Malagón"/>-->
-                    <img src="img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>
-                </figure>
-                <aside class="social-icons">
-
-                </aside>
-            </section>
+        <header id="header-avatar">                        
+            <figure>
+                <!--<img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=600" alt="Diego Malagón" class="img-thumbnail"/>-->
+                <img src="img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>
+            </figure>
+            <div class="btn-group-vertical social-icons">
+                <a class="btn btn-default btn-twitter"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-default btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-default btn-github"><i class="fa fa-github"></i></a>
+            </div>
         </header>
-        <section>
+        <section id="personal-section">
             <h1>Nombre del usuario</h1>
             <h2>Profesión del usuario</h2>
         </section>
-        <section>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor purus sed tellus condimentum lobortis. Mauris non interdum lorem. Nunc at nulla suscipit metus rhoncus porta eget id nibh. Cras a leo pulvinar, consectetur leo eget, mattis orci. Aenean eros ipsum, malesuada eget consectetur quis, pharetra vitae turpis. Morbi adipiscing ipsum in ligula tempor, vitae rhoncus augue placerat. Integer egestas adipiscing urna, quis lacinia tellus interdum et. Mauris dictum diam sit amet ultricies mollis.
+        <section id="biography">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor purus sed tellus condimentum lobortis. Mauris non interdum lorem. Nunc at nulla suscipit metus rhoncus porta eget id nibh. Cras a leo pulvinar, consectetur leo eget, mattis orci. Aenean eros ipsum, malesuada eget consectetur quis, pharetra vitae turpis. Morbi adipiscing ipsum in ligula tempor, vitae rhoncus augue placerat. Integer egestas adipiscing urna, quis lacinia tellus interdum et. Mauris dictum diam sit amet ultricies mollis.
+            </p>
         </section>
-        <section>
-            
+        <section id="skills">
+            <ul id="skills-list">
+                <li>PHP</li>
+                <li>Symfony2</li>
+                <li>HTML</li>
+                <li>HTML5</li>
+                <li>JavaScript</li>
+            </ul>
         </section>
         
         
