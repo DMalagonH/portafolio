@@ -1,7 +1,19 @@
+
+/*
+ * Paleta:
+ * Naranja1: #EC721F
+ * Naranja2: #FE9100
+ * Verde1: #849F2A
+ * Verde2: #ABC063
+ * Gris1: #2E2E2E
+ * Gris2: #383838
+*/
+
 body{
     font-size: 16px;
     font-family: sans-serif;
     color: #363634;
+    margin: 0 auto;
 }
 
 nav{
@@ -17,32 +29,103 @@ nav{
     text-align: center;
 }
 
-#biography{
+/* Contact */
+
+/* ... */
+
+/* me */
+
+#me #biography{
     max-width: 900px;
     padding: 1em 1em;
     margin: 0 auto;
 }
 
-#header-avatar{
+#me #header-avatar{
     background: #EDEDED;
     padding: 1.5em 0;
     text-align: center;
 }
 
-
-#header-avatar-container{
+#me #header-avatar-container{
     margin: 0 auto;
 }
 
-#header-avatar figure, #header-avatar div{
+#me #header-avatar figure, #header-avatar div{
     display: inline-block;
 }
 
-
-#header-avatar figure img{
+#me #header-avatar figure img{
     width: 150px;
     height: 150px;
 }
+
+#me #skills{
+    max-width: 900px;
+    padding: 1em 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#me #skills-list{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#me #skills-list li{
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+    background-color: #343434;
+    color: white;
+    display: inline-block;
+    height: 110px;
+    margin: .5em .8em;
+    text-align: center;
+    vertical-align: middle;
+    width: 110px;
+    -webkit-transition:.5s;
+}
+
+#me #skills-list li:hover{
+    background-color: #EE7117;
+    -webkit-transform: rotate(360deg);
+}
+
+#me #skills-list li .title{
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#me #skills-list li .percent{
+    display: block;
+}
+
+#me #personal-section{
+    background: #363634;
+    background-image: -moz-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
+    background-image: -webkit-linear-gradient(top, #363634 0%, #7A7A7A 100%);
+    background-image: -ms-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
+    background-image: linear-gradient(to bottom, #363634 0%, #7A7A7A 100%);
+    /*background-image: url('../img/background.png');*/
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#me #personal-section h1{
+    font-size: 1.7em;
+    margin: .1em auto;
+}    
+
+#me #personal-section h2{
+    font-size: 1.3em;
+    margin: .1em auto;
+} 
+
+/* Nav */
 
 #nav-list {
     list-style: none;
@@ -77,52 +160,31 @@ nav{
     color: #84A12D;    
 }
 
-#skills{
-    max-width: 900px;
-    padding: 1em 1em;
-    margin: 0 auto;
+
+/* Portfolio */
+#portfolio{
 }
 
-#skills-list{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-#skills-list li{
-    border: 1px solid #eeeeee;
-    border-radius: 50%;
-    display: inline-block;
-    height: 110px;
-    margin: .5em .8em;
-    text-align: center;
-    vertical-align: middle;
-    width: 110px;
-}
-
-#personal-section{
-    background: #363634;
-    background-image: -moz-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
-    background-image: -webkit-linear-gradient(top, #363634 0%, #7A7A7A 100%);
-    background-image: -ms-linear-gradient(bottom, #363634 0%, #7A7A7A 100%);
-    background-image: linear-gradient(to bottom, #363634 0%, #7A7A7A 100%);
-    /*background-image: url('../img/background.png');*/
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
-
-#personal-section h1{
-    font-size: 1.7em;
-    margin: .1em auto;
-}    
-
-#personal-section h2{
-    font-size: 1.3em;
-    margin: .1em auto;
-}    
+#portfolio #hits{
     
+    background: #EDEDED;
+    padding: 0;
+    text-align: center;
+}
+#portfolio #hits .detail-project{
+    display: none;
+}
 
+#portfolio #hits .figure-project img{
+    width: 100%;
+    height: auto;
+}
+
+.container-fluid{
+    padding: 0;
+}
+    
+/* Social icons */
 
 .btn-github, .btn-linkedin, .btn-twitter{
     font-size: 1.6em;
@@ -145,25 +207,35 @@ nav{
     margin-left: 2em;
 }
 
+@media screen and (min-width: 480px){
+    #portfolio #hits .detail-project{
+        display: inline;
+    }
+}
+
 @media screen and (min-width: 768px){
  
-    #header-avatar figure img{
+    /* Me */
+    
+    #me #header-avatar figure img{
         width: 300px;
         height: 300px;
     }
     
+    #me  #personal-section h1{
+        font-size: 2em;
+        margin: .1em auto;
+    }    
+
+    #me #personal-section h2{
+        font-size: 1.5em;
+        margin: .1em auto;
+    } 
+    
+    /* Nav */
+    
     #nav-list li a{
         font-size: 1.3em;
     }
-    
-    #personal-section h1{
-    font-size: 2em;
-    margin: .1em auto;
-}    
-
-    #personal-section h2{
-        font-size: 1.5em;
-        margin: .1em auto;
-    }  
     
 }
