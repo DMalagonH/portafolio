@@ -166,19 +166,48 @@ nav{
 }
 
 #portfolio #hits{
-    
-    background: #EDEDED;
     padding: 0;
-    text-align: center;
 }
-#portfolio #hits .detail-project{
-    display: none;
+
+#portfolio #hits .project-btn{
+    text-align: right;
+    
+}
+
+#portfolio #hits .project-detail{
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 1px 20px rgba(0,0,0,.075);
+    box-shadow: 0 1px 20px rgba(0,0,0,.075);
+    
+    padding: 20px;
+}
+#portfolio #hits .project-detail .glyphicon{
+    color: #FFA600;
+    font-size: 1.5em; 
+}
+
+#portfolio #hits .project-detail h4{
+    margin: 0px;
 }
 
 #portfolio #hits .figure-project img{
     width: 100%;
     height: auto;
 }
+
+#portfolio #tags{
+    padding-left: 20px;
+}
+
+#portfolio #timeline{
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 -1px 20px rgba(0,0,0,.075);
+    box-shadow: 0 -2px 20px rgba(0,0,0,.075);
+}
+
 
 .container-fluid{
     padding: 0;
