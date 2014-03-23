@@ -7,11 +7,11 @@
         <title>Diego Malagón</title>
 
         <!-- Bootstrap -->
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">-->
+        <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">-->
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -30,10 +30,10 @@
             </ul>
         </nav>
         <section id="me">
-            <header id="header-avatar">                        
+            <header class="header-avatar">                        
                 <figure>
-                    <!--<img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=600" alt="Diego Malagón" class="img-thumbnail"/>-->
-                    <img src="img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>
+                    <img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=600" alt="Diego Malagón" class="img-thumbnail"/>
+                    <!--<img src="img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>-->
                 </figure>
                 <div class="btn-group-vertical social-icons">
                     <a class="btn btn-default btn-twitter"><i class="fa fa-twitter"></i></a>
@@ -41,17 +41,25 @@
                     <a class="btn btn-default btn-github"><i class="fa fa-github"></i></a>
                 </div>
             </header>
-            <section id="personal-section">
-                <h1>Nombre del usuario</h1>
-                <h2>Profesión del usuario</h2>
+            <section class="personal-section">
+                <h1>Diego Malagón</h1>
+                <h2>Ingeniero de sistemas / Desarrollador web</h2>
             </section>
-            <section id="biography">
+            <section class="biography">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor purus sed tellus condimentum lobortis. Mauris non interdum lorem. Nunc at nulla suscipit metus rhoncus porta eget id nibh. Cras a leo pulvinar, consectetur leo eget, mattis orci. Aenean eros ipsum, malesuada eget consectetur quis, pharetra vitae turpis. Morbi adipiscing ipsum in ligula tempor, vitae rhoncus augue placerat. Integer egestas adipiscing urna, quis lacinia tellus interdum et. Mauris dictum diam sit amet ultricies mollis.
+                    Soy ingeniero de sistemas dedicado al desarrollo web. Desarrollo en PHP desde el 2011 y actualmente trabajo con el framework Symfony2. Me apasiona el desarrollo web, aprender y aplicar nuevas tecnologías en mis creaciones, estar a la vanguardia y mejorar cada día.
                 </p>
             </section>
-            <section id="skills">
-                <ul id="skills-list">
+            <h4> Mis habilidades </h4>
+            <div class="tags">
+                <span class="label label-primary">Todos</span>
+                <span class="label label-primary">Front-end</span>
+                <span class="label label-primary">Back-end</span>
+                <span class="label label-primary">Bases de datos</span> 
+                <span class="label label-primary">Otras tecnologías</span>
+            </div>
+            <section class="skills">
+                <ul class="skills-list">
                     <li>
                         <span class="title">PHP</span>
                         <span class="percent">90%</span>
@@ -108,8 +116,84 @@
             </section>
         </section>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!--<script src="js/bootstrap.min.js"></script>-->
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <section id="portfolio">
+            <section class="hits">
+                <figure class="figure-project">
+                    <img src="img/altactic.png" alt="Altactic" />
+                </figure>
+                <div class="project-detail">
+                    <h4><i class="glyphicon glyphicon-star"></i><strong>Altactic</strong></h4> 
+                    <p>Morbi eu imperdiet eros. Praesent pellentesque dignissim libero sed vestibulum.</p>
+                    <div class="project-btn">
+                        <a class="btn btn-danger btn-xs">Detalle</a>
+                        <a class="btn btn-danger btn-xs">Ver aplicación</a>
+                    </div>
+                </div>
+            </section>
+            <h4> Linea de tiempo de proyectos</h4>
+            <section class="tags">
+                <span class="label label-primary">Todos</span>
+                <span class="label label-primary">Universidad</span>
+                <span class="label label-primary">Altactic</span>
+                <span class="label label-primary">Personales</span>
+            </section>
+            <section class="timeline">
+                <ul class="timeline-list">
+                    <li>
+                        <a href="#">
+                            <span class="date">2014</span>
+                            <figure class="project-img">
+                                <img src="img/logo_altactic.png" alt="">
+                            </figure>
+                            <span class="title">Altactic</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="date">2014</span>
+                            <figure class="project-img">
+                                <img src="img/logo_vocationet.png" alt="">
+                            </figure>
+                            <span class="title">Vocationet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="date">2014</span>
+                            <figure class="project-img">
+                                <img src="img/logo_altactic.png" alt="">
+                            </figure>
+                            <span class="title">Portafolio</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </section> 
+        </section>
+
+        <section id="project">
+            <section class="project-detail">
+                <figure class="figure-project">
+                    <img src="img/altactic.png" alt="Altactic" />
+                </figure>
+                <div class="project-description">
+                    <h4><strong>Altactic</strong></h4> 
+                    <p>Morbi eu imperdiet eros. Praesent pellentesque dignissim libero sed vestibulum.</p>
+                    <div class="project-btn">
+                        <a class="btn btn-danger btn-xs">Ver aplicación</a>
+                    </div>
+                </div>
+            </section>
+            <h4>Características</h4>
+            <section class="project-features">
+                <article class="feature">
+                    
+                </article>
+            </section>
+        </section>
+
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
     </body>
 </html>
