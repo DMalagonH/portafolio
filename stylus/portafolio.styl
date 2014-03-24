@@ -10,52 +10,107 @@ gray1 = #2E2E2E
 gray2 = #383838
 font-color = #363634
 
+
 body
-  font-size 16px
-  font-family sans-serif
-  color #363634
-  margin 0 auto
-
-nav
-  background #363634
-  background-image linear-gradient(to bottom, #363634 0%, #7A7A7A 100%)
-  color white
-  border-bottom 1px solid #5C5C5C
-  text-align center
-
-ul
-	margin 0
-	padding 0
-	list-style none
+	font-size 16px
+	font-family sans-serif
+	color #363634
+	margin 0 auto
 
 a
+	color font-color
 	text-decoration none
 	&:hover
 		text-decoration none
-		
-	
+
+ul
+	list-style none
+	margin 0
+	padding 0
+
+h3
+	padding .5em
+	display inline-block
+	margin-left .5em
+	font-weight 800
+
+footer
+	background-image linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+	box-shadow inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 2px 3px 0px rgba(0,0,0,0.35);
+	text-align center
+	color white
+	display block
+	padding 1em 0
+	p
+		display block
+		margin 0
+		font-size .8em
+
+.tags
+	margin 1em 0
+	padding-left 1em
+
+.nav-list
+	background-image linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+	box-shadow inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 2px 3px 0px rgba(0,0,0,0.35);
+	text-align center
+	li
+		display inline-block
+		a
+			color white
+			font-size 1.3em
+			display block
+			padding .4em 1.5em
+			transition .5s
+			&:hover
+				color green1
+		&:nth-child(2)
+			border-left 1px solid #5C5C5C
+			border-right 1px solid #5C5C5C
+		&.active
+			a
+				color green2
+
+.btn-github, .btn-linkedin, .btn-twitter
+	font-size 1.6em
+	padding 2px 8px
+
+.btn-github
+	i
+		color #333333
+
+.btn-linkedin
+	i
+		color #1685D7
+
+.btn-twitter
+	i
+		color #52A7E7
+
+.social-icons
+	margin-left 2em
+
+
 
 #me
-	display none
-	.biography
-	    border-bottom 1px solid #ddd
-	    box-shadow 0 1px 20px rgba(0,0,0,.075)
-	    font-size .8em
-	    margin 0 auto
-	    padding 1em 1em
 	.header-avatar
-		background #EDEDED
+		background url('../img/background.jpg')
 		padding 1.5em 0
 		text-align center
-		figure
 		div
-  			display inline-block
+			display inline-block
 		figure
-		  img
-		    width 150px
-		    height 150px
-	.header-avatar-container
+			display inline-block
+			img
+				width 150px
+				height 150px
+	
+	.biography
+		border-bottom 1px solid #ddd
+		box-shadow 0 1px 20px rgba(0,0,0,.075)
+		font-size .8em
 		margin 0 auto
+		padding 1.4em 1em 1em
 	.skills
 		border-bottom 1px solid #ddd
 		border-top 1px solid #ddd
@@ -65,9 +120,9 @@ a
 		padding 1em 1em
 		text-align center
 		.skills-list
-		    list-style none
-		    margin 0px
-		    padding 0px
+			list-style none
+			margin 0px
+			padding 0px
 			li
 				border 1px solid #eeeeee
 				border-radius 50%
@@ -92,7 +147,8 @@ a
 					display block
 	.personal-section
 		background #363634
-		background-image linear-gradient(to bottom, #363634 0%, #7A7A7A 100%)
+		background-image linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+		box-shadow inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 2px 3px 0px rgba(0,0,0,0.35);
 		color white
 		padding 1em
 		text-align center
@@ -102,33 +158,6 @@ a
 		h2
 			font-size 1em
 			margin .1em auto
-
-#nav-list
-  list-style none
-  margin 0px
-  padding 0px
-  li
-    display inline-block
-    &.active
-      a
-        color #ABC365
-    &.item-nav-border
-      border-left 1px solid #5C5C5C
-      border-right 1px solid #5C5C5C
-    a
-      color white
-      display block
-      font-size 1.5em
-      padding .4em 1.5em
-      text-decoration none
-      transition .5s
-      font-size 1.3em
-      &:hover
-        color #84A12D
-
-.tags
-	margin 1em 0
-	padding-left 1em
 
 #portfolio
 	display none
@@ -182,9 +211,9 @@ a
 					border 3px solid #ddd
 					padding 0.1em
 					box-shadow 0 1px 20px rgba(0,0,0,.5)
-			
 
 #project
+	display none
 	.project-detail
 		.figure-project
 			img
@@ -204,32 +233,9 @@ a
 		background-color white
 		border-top 1px solid #ddd
 
-
 @keyframes star
 	0%
 		transform scale(1)
 	100%
 		transform scale(2)
 		opacity 0
-
-
-.btn-github, .btn-linkedin, .btn-twitter
-  font-size 1.6em
-  padding 2px 8px
-
-.btn-github
-  i
-    color #333333
-
-.btn-linkedin
-  i
-    color #1685D7
-
-.btn-twitter
-  i
-    color #52A7E7
-
-.social-icons
-  margin-left 2em
-
-
