@@ -31,7 +31,7 @@ ul
 h3
 	padding .5em
 	display inline-block
-	margin-left .5em
+	margin .7em .5em
 	font-weight 800
 
 footer
@@ -93,6 +93,7 @@ footer
 
 
 #me
+	display none
 	.header-avatar
 		background url('../img/background.jpg')
 		padding 1.5em 0
@@ -168,30 +169,29 @@ footer
 	.project-detail
 		background-color white
 		border-bottom 1px solid #ddd
-		margin-bottom 20px
 		box-shadow 0 1px 20px rgba(0,0,0,.075)
-		padding 20px
+		padding 1.2em
 		.glyphicon
+			animation 1.2s star infinite
 			color #FFA600
 			font-size 1.3em
-			animation 1.2s star infinite
 		h4
 			margin 0px
 			strong
 				margin-left .7em
 	.figure-project
 		img
-			width 100%
 			height auto
+			width 100%
 	.timeline
 		border-top 1px solid #ddd
-		margin-top 20px
 		box-shadow 0 -2px 20px rgba(0,0,0,.075)
+		margin-top 20px
 		.timeline-list
 			a
 				color font-color
-				padding .7em
 				display block
+				padding .7em
 			li
 				border-top 1px solid #ddd
 				&:hover
@@ -205,12 +205,12 @@ footer
 				margin 0 1em
 				img
 					background-color white
-					border-radius 50%
-					width 80px
-					height 80px
 					border 3px solid #ddd
-					padding 0.1em
+					border-radius 50%
 					box-shadow 0 1px 20px rgba(0,0,0,.5)
+					height 80px
+					padding 0.1em
+					width 80px
 
 #project
 	display none
@@ -222,7 +222,6 @@ footer
 		.project-description
 			background-color white
 			border-bottom 1px solid #ddd
-			margin-bottom 20px
 			box-shadow 0 1px 20px rgba(0,0,0,.075)
 			padding 1.1em 1.1em
 			h4
@@ -232,6 +231,54 @@ footer
 	.project-features
 		background-color white
 		border-top 1px solid #ddd
+		box-shadow 0 -2px 20px rgba(0,0,0,.075)
+		overflow hidden
+		.feature
+			position relative
+			min-height 50px
+			border-bottom 1px solid #ddd
+			figure
+				position absolute
+				img
+					height 56px
+					width 50px
+			p
+				font-size .8em
+				margin-left 50px
+				padding-left .5em
+				padding-top .5em
+				.title
+					display inline-block
+					font-size .9em
+
+#contact
+	.info
+		background url('../img/background.jpg')
+		height 170px
+		padding 1em .5em
+		position relative
+		figure
+			position absolute
+			left 1em
+			img 
+				height 110px
+				width 110px
+		.personal-info
+			position absolute
+			right 1em
+			margin-left 90px
+			color white
+			font-size .8em
+		.social-icons
+			position absolute
+			bottom 1em
+			margin 0
+			right 1em
+	.form-contact
+		border-bottom 1px solid #ddd
+		border-top 1px solid #ddd
+		box-shadow 0 -2px 20px rgba(0,0,0,.075)
+		padding .8em
 
 @keyframes star
 	0%
