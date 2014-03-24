@@ -1,20 +1,16 @@
 @import "nib"
+@import "fonts.styl"
 
 vendor-prefixes = webkit o ms moz official
 
-orange1 = #EC721F
-orange2 = #FE9100
-green1 = #849F2A
-green2 = #ABC063
-gray1 = #2E2E2E
-gray2 = #383838
 font-color = #363634
-
+link-color1 = #2a6496
+link-color2 = #428bca
 
 body
 	font-size 16px
 	font-family sans-serif
-	color #363634
+	color font-color
 	margin 0 auto
 
 a
@@ -33,6 +29,7 @@ h3
 	display inline-block
 	margin .7em .5em
 	font-weight 800
+	color link-color1
 
 footer
 	background-image linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
@@ -47,7 +44,7 @@ footer
 		font-size .8em
 
 .tags
-	margin 1em 0
+	margin 0 0 1em
 	padding-left 1em
 
 .nav-list
@@ -58,22 +55,22 @@ footer
 		display inline-block
 		a
 			color white
-			font-size 1.3em
+			font-size 1.5em
 			display block
-			padding .4em 1.5em
+			padding .2em 1.2em
 			transition .5s
 			&:hover
-				color green1
+				color link-color1
 		&:nth-child(2)
 			border-left 1px solid #5C5C5C
 			border-right 1px solid #5C5C5C
 		&.active
 			a
-				color green2
+				color link-color2
 
 .btn-github, .btn-linkedin, .btn-twitter
 	font-size 1.6em
-	padding 2px 8px
+	padding 5px 8px 1px
 
 .btn-github
 	i
@@ -93,7 +90,7 @@ footer
 
 
 #me
-	display none
+	//display none
 	.header-avatar
 		background url('../img/background.jpg')
 		padding 1.5em 0
@@ -147,7 +144,7 @@ footer
 				.percent
 					display block
 	.personal-section
-		background #363634
+		background font-color
 		background-image linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
 		box-shadow inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 2px 3px 0px rgba(0,0,0,0.35);
 		color white
@@ -161,7 +158,7 @@ footer
 			margin .1em auto
 
 #portfolio
-	display none
+	//isplay none
 	.hits
 		padding 0
 	.project-btn
@@ -213,7 +210,7 @@ footer
 					width 80px
 
 #project
-	display none
+	//display none
 	.project-detail
 		.figure-project
 			img
