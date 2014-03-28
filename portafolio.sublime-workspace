@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"lin",
+				"link-color1"
+			],
+			[
+				"li",
+				"link-color1"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"rig",
+				"border-right"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"so",
+				"social-icons"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"gre",
+				"green2"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"na",
+				"nav-list"
+			],
+			[
+				"gr",
+				"green2"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"gree",
+				"green1"
+			],
+			[
 				"project",
 				"project-detail"
 			],
@@ -12,20 +84,12 @@
 				"margin-left"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"ma",
 				"margin-left"
 			],
 			[
 				"te",
 				"text-decoration"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"border",
@@ -59,16 +123,28 @@
 			"file": "stylus/portafolio.styl",
 			"settings":
 			{
-				"buffer_size": 3957,
+				"buffer_size": 5236,
 				"line_ending": "Unix",
 				"name": "portafolio.styl"
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "stylus/fonts.styl",
 			"settings":
 			{
-				"buffer_size": 9329,
+				"buffer_size": 978,
+				"line_ending": "Unix",
+				"name": "fonts.styl"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"es\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <title>Diego Malagón</title>\n\n        <!-- Bootstrap -->\n        <link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css\">\n        <link rel=\"stylesheet\" href=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css\">\n\n        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n        <!--[if lt IE 9]>\n        <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n        <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n        <![endif]-->\n        \n        <link href=\"css/portafolio.css\" rel=\"stylesheet\">\n    </head>\n    <body>\n        <nav>\n            <ul class=\"nav-list\">\n                <li class=\"active\"><a href=\"#\"><span class=\"icon-user\"></span> <span class=\"hidden-xs\">Yo</span></a></li>\n                <li><a href=\"#\"><span class=\"icon-portfolio\"></span> <span class=\"hidden-xs\">Portafolio</span></a></li>\n                <li><a href=\"#\"><span class=\"icon-contact\"></span> <span class=\"hidden-xs\">Contacto</span></a></li>\n            </ul>\n        </nav>\n\n\n        <section id=\"me\">\n            <header class=\"header-avatar\">                        \n                <figure>\n                    <img src=\"https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=600\" alt=\"Diego Malagón\" class=\"img-thumbnail\"/>\n                    <!--<img src=\"img/avatar.jpg\" alt=\"Diego Malagón\" class=\"img-thumbnail\"/>-->\n                </figure>\n                <div class=\"btn-group-vertical social-icons\">\n                    <a href=\"https://twitter.com/DMalagonH\" class=\"btn btn-default btn-twitter\" target=\"_blank\"><i class=\"icon-twitter\"></i></a>\n                    <a href=\"http://co.linkedin.com/in/dmalagonh\" class=\"btn btn-default btn-linkedin\" target=\"_blank\"><i class=\"icon-linkedin\"></i></a>\n                    <a href=\"https://github.com/DMalagonH\" class=\"btn btn-default btn-github\" target=\"_blank\"><i class=\"icon-github\"></i></a>\n                </div>\n            </header>\n            <section class=\"personal-section\">\n                <h1>Diego Malagón</h1>\n                <h2>Ingeniero de sistemas / Desarrollador web</h2>\n            </section>\n            <section class=\"biography\">\n                <p>\n                    <strong>Biografía:</strong> Soy ingeniero de sistemas dedicado al desarrollo web. Desarrollo en PHP desde el 2011 y actualmente trabajo con el framework Symfony2. Me apasiona el desarrollo web, aprender y aplicar nuevas tecnologías en mis creaciones, estar a la vanguardia y mejorar cada día.\n                </p>\n            </section>\n            <h3> Mis habilidades </h3>\n            <div class=\"tags\">\n                <span class=\"label label-primary\">Todos</span>\n                <span class=\"label label-primary\">Front-end</span>\n                <span class=\"label label-primary\">Back-end</span>\n                <span class=\"label label-primary\">Bases de datos</span> \n                <span class=\"label label-primary\">Otras tecnologías</span>\n            </div>\n            <section class=\"skills\">\n                <ul class=\"skills-list\">\n                    <li>\n                        <span class=\"title\">PHP</span>\n                        <span class=\"percent\">90%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">Symfony2</span>\n                        <span class=\"percent\">70%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">HTML5</span>\n                        <span class=\"percent\">60%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">JavaScript</span>\n                        <span class=\"percent\">80%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">CSS3</span>\n                        <span class=\"percent\">70%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">JQuery</span>\n                        <span class=\"percent\">80%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">NodeJS</span>\n                        <span class=\"percent\">10%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">Java</span>\n                        <span class=\"percent\">30%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">.NET</span>\n                        <span class=\"percent\">40%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">MySQL</span>\n                        <span class=\"percent\">80%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">MongoDB</span>\n                        <span class=\"percent\">5%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">GIT</span>\n                        <span class=\"percent\">70%</span>\n                    </li>\n                    <li>\n                        <span class=\"title\">Ubuntu</span>\n                        <span class=\"percent\">70%</span>\n                    </li>\n                </ul>\n            </section>\n        </section>\n        \n        <section id=\"portfolio\">\n            <section class=\"hits\">\n                <figure class=\"figure-project\">\n                    <img src=\"img/altactic.png\" alt=\"Altactic\" />\n                </figure>\n                <div class=\"project-detail\">\n                    <h4><i class=\"glyphicon glyphicon-star\"></i><strong>Altactic</strong></h4> \n                    <p>Morbi eu imperdiet eros. Praesent pellentesque dignissim libero sed vestibulum.</p>\n                    <div class=\"project-btn\">\n                        <a class=\"btn btn-danger btn-xs\">Detalle</a>\n                        <a class=\"btn btn-danger btn-xs\">Ver aplicación</a>\n                    </div>\n                </div>\n            </section>\n            <h3> Linea de tiempo de proyectos</h3>\n            <section class=\"tags\">\n                <span class=\"label label-primary\">Todos</span>\n                <span class=\"label label-primary\">Universidad</span>\n                <span class=\"label label-primary\">Altactic</span>\n                <span class=\"label label-primary\">Personales</span>\n            </section>\n            <section class=\"timeline\">\n                <ul class=\"timeline-list\">\n                    <li>\n                        <a href=\"#\">\n                            <span class=\"date\">2014</span>\n                            <figure class=\"project-img\">\n                                <img src=\"img/logo_altactic.png\" alt=\"\">\n                            </figure>\n                            <span class=\"title\">Altactic</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <span class=\"date\">2014</span>\n                            <figure class=\"project-img\">\n                                <img src=\"img/logo_vocationet.png\" alt=\"\">\n                            </figure>\n                            <span class=\"title\">Vocationet</span>\n                        </a>\n                    </li>\n                    <li>\n                        <a href=\"#\">\n                            <span class=\"date\">2014</span>\n                            <figure class=\"project-img\">\n                                <img src=\"img/logo_altactic.png\" alt=\"\">\n                            </figure>\n                            <span class=\"title\">Portafolio</span>\n                        </a>\n                    </li>\n\n                </ul>\n            </section> \n        </section>\n\n        <section id=\"project\">\n            <section class=\"project-detail\">\n                <figure class=\"figure-project\">\n                    <img src=\"img/home_altactic.png\" alt=\"Altactic\" />\n                </figure>\n                <div class=\"project-description\">\n                    <h4><strong>Altactic</strong></h4> \n                    <p>Morbi eu imperdiet eros. Praesent pellentesque dignissim libero sed vestibulum.</p>\n                    <div class=\"project-btn\">\n                        <a class=\"btn btn-danger btn-xs\">Ver aplicación</a>\n                    </div>\n                </div>\n            </section>\n            <h3>Características</h3>\n            <section class=\"project-features\">\n                <article class=\"feature\">\n                    <figure>\n                        <img src=\"img/background.png\" />\n                    </figure>\n                    <p>\n                        <strong class=\"title\">\n                            HTML 5\n                        </strong>\n                        Contiene un template HTML5 Responsive desing\n                    </p>\n                </article>\n                <article class=\"feature\">\n                    <figure>\n                        <img src=\"img/background.png\" />\n                    </figure>\n                    <p>\n                        <strong class=\"title\">\n                            HTML 5\n                        </strong>\n                        Contiene un template HTML5 Responsive desing\n                    </p>\n                </article>\n                <article class=\"feature\">\n                    <figure>\n                        <img src=\"img/background.png\" />\n                    </figure>\n                    <p>\n                        <strong class=\"title\">\n                            HTML 5\n                        </strong>\n                        Contiene un template HTML5 Responsive desing\n                    </p>\n                </article>\n                <article class=\"feature\">\n                    <figure>\n                        <img src=\"img/background.png\" />\n                    </figure>\n                    <p>\n                        <strong class=\"title\">\n                            HTML 5\n                        </strong>\n                        Contiene un template HTML5 Responsive desing\n                    </p>\n                </article>\n                <article class=\"feature\">\n                    <figure>\n                        <img src=\"img/background.png\" />\n                    </figure>\n                    <p>\n                        <strong class=\"title\">\n                            HTML 5\n                        </strong>\n                        Contiene un template HTML5 Responsive desing\n                    </p>\n                </article>\n            </section>\n        </section>\n\n        <section id=\"contact\">\n            <section class=\"info\">                        \n                <figure>\n                    <img src=\"https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=600\" alt=\"Diego Malagón\" class=\"img-thumbnail\"/>\n                    <!--<img src=\"img/avatar.jpg\" alt=\"Diego Malagón\" class=\"img-thumbnail\"/>-->\n                </figure>\n                <ul class=\"personal-info\">\n                    <li><strong>Diego Malagón</strong></li>\n                    <li>Bogotá D.C. - Colombia</li>\n                    <li>320 838 37 07</li>\n                    <li>diegomalagonh@gmail.com</li>\n                </ul>\n                <div class=\"btn-group social-icons\">\n                    <a href=\"https://twitter.com/DMalagonH\" class=\"btn btn-default btn-twitter\" target=\"_blank\"><i class=\"icon-twitter\"></i></a>\n                    <a href=\"http://co.linkedin.com/in/dmalagonh\" class=\"btn btn-default btn-linkedin\" target=\"_blank\"><i class=\"icon-linkedin\"></i></a>\n                    <a href=\"https://github.com/DMalagonH\" class=\"btn btn-default btn-github\" target=\"_blank\"><i class=\"icon-github\"></i></a>\n                </div>\n            </section>\n            <h3> Enviar mensaje </h3>\n            <form class=\"form-contact\" role=\"form\">\n                <div class=\"form-group\">\n                    <label for=\"name\">Nombre</label>\n                    <input type=\"text\" name=\"name\" class=\"form-control\" placeholder=\"Nombre\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"email\">Email</label>\n                    <input type=\"email\" class=\"form-control\" name=\"email\" placeholder=\"Email\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"message\">Mensaje</label>\n                    <textarea class=\"form-control\" name=\"message\" placeholder=\"Mensaje\"></textarea>\n                </div>\n                <button type=\"submit\" class=\"btn btn-primary\">Enviar</button>\n            </form>\n        </section>\n\n        <footer>\n            <p> Portafolio Diego Malagón - 2014</p>\n        </footer>\n    \n        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js\"></script>\n        <script src=\"//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js\"></script>\n    </body>\n</html>",
+			"file": "index.html",
+			"file_size": 13350,
+			"file_write_time": 130401738497701190,
+			"settings":
+			{
+				"buffer_size": 13275,
 				"line_ending": "Unix"
 			}
 		},
@@ -102,6 +178,17 @@
 			"settings":
 			{
 				"buffer_size": 8294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!doctype html>\n<html>\n<head>\n	<meta charset=\"utf-8\">\n	<title>IcoMoon Demo</title>\n	<meta name=\"description\" content=\"An Icon Font Generated By IcoMoon.io\">\n	<meta name=\"viewport\" content=\"width=device-width\">\n	<link rel=\"stylesheet\" href=\"demo-files/demo.css\">\n	<link rel=\"stylesheet\" href=\"style.css\"></head>\n<body>\n	<div class=\"bgc1 clearfix\">\n		<h1 class=\"mhmm mvm\"><span class=\"fgc1\">Font Name:</span> icomoon <small class=\"fgc1\">(Glyphs:&nbsp;7)</small></h1>\n	</div>\n	<div class=\"clearfix mhl ptl\">\n		<h1 class=\"mvm mtn bshadow fgc1\">Grid Size: 16</h1>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-contact\"></span><span class=\"mls\"> icon-contact</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e600\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe600;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-user\"></span><span class=\"mls\"> icon-user</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e601\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe601;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-portfolio\"></span><span class=\"mls\"> icon-portfolio</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e602\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe602;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-star\"></span><span class=\"mls\"> icon-star</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e606\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe606;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-twitter\"></span><span class=\"mls\"> icon-twitter</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e603\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe603;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-github\"></span><span class=\"mls\"> icon-github</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e604\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe604;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n		<div class=\"glyph fs1\">\n			<div class=\"clearfix bshadow0 pbs\">\n				<span class=\"icon-linkedin\"></span><span class=\"mls\"> icon-linkedin</span>\n			</div>\n			<fieldset class=\"fs0 size1of1 clearfix\">\n				<input type=\"text\" readonly value=\"e605\" class=\"unit size1of2\" />\n				<input type=\"text\" maxlength=\"1\" readonly value=\"&#xe605;\" class=\"unitRight size1of2 talign-right\" />\n			</fieldset>\n			<div class=\"fs0 bshadow0 clearfix noLiga-true\">\n				<span class=\"unit pvs fgc1\">liga: </span>\n				<input type=\"text\" readonly value=\"\" class=\"liga unitRight\" />\n			</div>\n		</div>\n	</div>\n\n	<!--[if gt IE 8]><!-->\n	<div class=\"mhl clearfix mbl\">\n		<h1>Font Test Drive</h1>\n		<label>\n			Font Size: <input id=\"fontSize\" type=\"number\" class=\"textbox0 mbm\"\n			min=\"8\" value=\"48\" />\n			px\n		</label>\n		<input id=\"testText\" type=\"text\" class=\"phl size1of1 mvl\"\n		placeholder=\"Type some text to test...\" value=\"\"/>\n		</label>\n		<div id=\"testDrive\" class=\"icon-\">&nbsp;\n		</div>\n	</div>\n	<!--<![endif]-->\n	<div class=\"bgc1 clearfix\">\n		<p class=\"mhl\">Generated by <a href=\"http://icomoon.io/app\">IcoMoon</a></p>\n	</div>\n\n	<script src=\"demo-files/demo.js\"></script>\n</body>\n</html>",
+			"file": "/home/diego/.cache/.fr-dzH7Q4/demo.html",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 5132,
 				"line_ending": "Unix"
 			}
 		},
@@ -151,6 +238,7 @@
 	},
 	"file_history":
 	[
+		"/home/diego/Proyectos/web/portafolio/css/fonts.css",
 		"/home/diego/Proyectos/web/portafolio/css/portafolio.css",
 		"/home/diego/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/var/www/Cursos/Frontend/Clase1/style.css",
@@ -181,6 +269,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#383838",
+			"gray2",
+			"gray1",
+			"#2E2E2E",
+			"#ABC063",
+			"#849F2A",
+			"color",
+			"#363634",
+			"bottom",
+			"background",
 			"7em",
 			"text",
 			"<li>\n                        <span class=\"date\">2014</span>\n                        <figure class=\"project-img\">\n                            <img src=\"img/logo_vocationet.png\" alt=\"\">\n                        </figure>\n                        <span class=\"title\">Vocationet</span>\n\n                    </li>",
@@ -208,7 +306,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -217,15 +315,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3957,
+						"buffer_size": 5236,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3637,
-								3637
+								1148,
+								1148
 							]
 						],
 						"settings":
@@ -234,7 +332,7 @@
 							"syntax": "Packages/Stylus/Stylus.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2886.0,
+						"translation.y": 671.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -242,19 +340,48 @@
 				},
 				{
 					"buffer": 1,
-					"file": "index.html",
+					"file": "stylus/fonts.styl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9329,
+						"buffer_size": 978,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8710,
-								8710
+								275,
+								275
+							]
+						],
+						"settings":
+						{
+							"auto_name": "fonts.styl",
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -264,14 +391,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1150.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "portafolio.html",
 					"semi_transient": false,
 					"settings":
@@ -297,11 +424,11 @@
 						"translation.y": 433.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "/var/www/Cursos/Frontend/sfotipy/templates/stylus/estilos.styl",
 					"semi_transient": false,
 					"settings":
@@ -313,8 +440,8 @@
 						"selection":
 						[
 							[
-								1825,
-								1825
+								39,
+								39
 							]
 						],
 						"settings":
@@ -323,14 +450,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1793.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "/var/www/Cursos/Frontend/sfotipy/templates/index.html",
 					"semi_transient": false,
 					"settings":
@@ -355,11 +482,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
+					"file": "/home/diego/.cache/.fr-dzH7Q4/demo.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "/home/diego/Proyectos/tutoriales/Frontend/stylus",
 					"semi_transient": false,
 					"settings":
@@ -384,7 +540,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
