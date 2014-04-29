@@ -4,6 +4,9 @@
 
 vendor-prefixes = webkit o ms moz official
 
+body
+	font-size 16px
+
 .intro-header
 	.container
 		.intro-message
@@ -13,17 +16,108 @@ vendor-prefixes = webkit o ms moz official
 				li 
 					a
 						width 10em
+			figure
+				img
+					width 180px
+					height auto
+			h1
+				font-size 2.2em
+			h2	
+				font-size 1.4em	
+
+.content-section-a
+.content-section-b
+	padding 25px 0
+
+.skills
+	.section-heading
+		margin-bottom 10px
+	.skills-list
+		list-style none
+		margin 0 auto
+		padding 0px
+		text-align center
+		li
+			background-color #343434
+			border 1px solid #eeeeee
+			border-radius 50%
+			color white
+			display inline-block
+			height 100px
+			margin .5em .2em
+			text-align center
+			transition .5s
+			vertical-align middle
+			width 100px
+			&:hover
+				background-color #EE7117
+				transform rotate(360deg)
+			.title
+				display block
+				font-size 1.2em
+				font-weight 400
+				margin-top 1.3em
+			.percent
+				display block
+				font-size 1.3em
+				font-weight 400
+
+.tags
+	margin-bottom .8em
+
+.buttons
+	margin-bottom .8em
 
 .banner
 	.container
 		.banner-social-buttons
 			li
 				a
-					width 10em
-					
+					width 7.8em
+
+
+				
+#portfolio
+	section
+		&:first-child
+			padding-top 50px
+	.projects-timeline
+		.project-item
+			border-bottom 1px solid #eee
+			margin-bottom 1em
+			margin-top 1.5em
+			padding-bottom .5em
+			&:last-child
+				border-bottom 0
+			figure
+				text-align center
+				img
+					width 150px
+					height auto
+			.date
+				text-align center
+				padding auto 0
+			p
+				font-weight normal
 			
 // Tablet			
-//@media (max-width: 767px)
-	
+//@media screen and (min-width:480px)
+
+
 // Desktop
-//@media (max-width: 1199px)
+@media screen and (min-width:1024px)
+	.intro-header
+		.container
+			.intro-message
+				figure
+					img
+						width 220px
+				h1
+					font-size 2.8em
+				h2
+					font-size 2.3em
+
+	#portfolio
+		section
+			&:first-child
+				padding-top 80px
