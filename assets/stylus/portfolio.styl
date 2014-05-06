@@ -75,8 +75,6 @@ body
 				a
 					width 7.8em
 
-
-				
 #portfolio
 	section
 		&:first-child
@@ -99,10 +97,63 @@ body
 				padding auto 0
 			p
 				font-weight normal
-			
-// Tablet			
-//@media screen and (min-width:480px)
 
+#project-detail
+	section
+		&:first-child
+			padding-top 50px
+	.project-header
+		.container
+			.buttons
+				text-align right
+	.project-features
+		.feature-item
+			border-bottom 1px solid #eee
+			margin-bottom 1em
+			margin-top 1.5em
+			padding-bottom .5em
+			&:last-child
+				border-bottom 0
+			figure
+				img
+					width 150px
+					height auto
+			p
+				font-weight normal
+#contact
+	padding-bottom 50px
+	.image
+		text-align center
+		figure
+			img
+				width 200px
+				height auto
+	.info
+		text-align center
+		.personal-info
+			text-align left
+			list-style none
+			margin 0 auto
+			width 265px
+			padding 0 2.5em
+	.banner-social-buttons
+		float none
+		margin-top 2em
+		text-align center
+
+		
+// Tablet			
+@media screen and (min-width:760px)
+	#contact
+		.image
+			text-align right
+			figure
+				text-align right				
+		.info
+			text-align left
+			.personal-info
+				width initial
+				padding 0
 
 // Desktop
 @media screen and (min-width:1024px)
@@ -121,3 +172,18 @@ body
 		section
 			&:first-child
 				padding-top 80px
+
+	#project-detail
+		section
+			&:first-child
+				padding-top 80px
+	#contact
+		.image
+			text-align right
+			figure
+				text-align right				
+		.info
+			text-align left
+			.personal-info
+				width initial
+				padding 0
