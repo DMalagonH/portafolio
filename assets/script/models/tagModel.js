@@ -1,0 +1,1 @@
+Portfolio.Models.TagModel = Backbone.Model.extend({});

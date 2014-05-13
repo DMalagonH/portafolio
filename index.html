@@ -42,9 +42,7 @@ c<!DOCTYPE html>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
     
     <!-- Me -->
@@ -57,8 +55,8 @@ c<!DOCTYPE html>
                     <div class="col-lg-12">
                         <div class="intro-message">
                             <figure>
-                                <img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=360" alt="Diego Malagón" class="img-thumbnail"/>
-                                <!--<img src="assets/img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>-->
+                                <!-- <img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=360" alt="Diego Malagón" class="img-thumbnail"/> -->
+                                <img src="assets/img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>
                             </figure>
                             <h1>Diego Malagón</h1>
                             <h2>Desarrollador web - Ingeniero de sistemas</h2>
@@ -115,67 +113,15 @@ c<!DOCTYPE html>
                             <span class="label label-primary">Bases de datos</span> 
                             <span class="label label-primary">Otras tecnologías</span>
                         </div>
-                        <script type="text/template" id="skill-tmpl">
-                            <li>
+
+                        <script type="text/template" id="skill-tmpl">     
+                            <li>                       
                                 <span class="title"><% print(title) %></span>
                                 <span class="percent"><% print(percent) %>%</span>
                             </li>
-                        </script>   
+                        </script>
+                        <ul class="skills-list"></ul>
 
-                        <ul class="skills-list">
-                            <li>
-                                <span class="title">PHP</span>
-                                <span class="percent">90%</span>
-                            </li>
-                            <li>
-                                <span class="title">Symfony2</span>
-                                <span class="percent">70%</span>
-                            </li>
-                            <li>
-                                <span class="title">HTML5</span>
-                                <span class="percent">60%</span>
-                            </li>
-                            <li>
-                                <span class="title">JavaScript</span>
-                                <span class="percent">80%</span>
-                            </li>
-                            <li>
-                                <span class="title">CSS3</span>
-                                <span class="percent">70%</span>
-                            </li>
-                            <li>
-                                <span class="title">JQuery</span>
-                                <span class="percent">80%</span>
-                            </li>
-                            <li>
-                                <span class="title">NodeJS</span>
-                                <span class="percent">10%</span>
-                            </li>
-                            <li>
-                                <span class="title">Java</span>
-                                <span class="percent">30%</span>
-                            </li>
-                            <li>
-                                <span class="title">.NET</span>
-                                <span class="percent">40%</span>
-                            </li>
-                            <li>
-                                <span class="title">MySQL</span>
-                                <span class="percent">80%</span>
-                            </li>
-                            <li>
-                                <span class="title">MongoDB</span>
-                                <span class="percent">5%</span>
-                            </li>
-                            <li>
-                                <span class="title">GIT</span>
-                                <span class="percent">70%</span>
-                            </li>
-                            <li>
-                                <span class="title">Ubuntu</span>
-                                <span class="percent">70%</span>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -397,8 +343,8 @@ c<!DOCTYPE html>
             <div class="row">
                 <div class="image col-xs-12 col-sm-6 col-md-6">
                     <figure>
-                        <img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=400" alt="Diego Malagón" class="img-thumbnail"/>
-                        <!--<img src="assets/img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>-->
+                        <!-- <img src="https://s.gravatar.com/avatar/d2d9e44512d1cef73f08bc05d399fec0?s=400" alt="Diego Malagón" class="img-thumbnail"/> -->
+                        <img src="assets/img/avatar.jpg" alt="Diego Malagón" class="img-thumbnail"/>
                     </figure>
                 </div>
                 <div class="info col-xs-12 col-sm-6 col-md-6">
@@ -468,10 +414,13 @@ c<!DOCTYPE html>
     <script src="assets/bower_components/underscore/underscore.js"></script>
     <script src="assets/bower_components/backbone/backbone.js"></script>
     <script src="assets/script/app.js"></script>
-    <script src="assets/script/models/skill.js"></script>
-    <script src="assets/script/collections/skills.js"></script>
-    <script src="assets/script/views/skill.js"></script>
-    <script src="assets/script/views/skills.js"></script>
+    <script src="assets/script/models/userModel.js"></script>
+    <script src="assets/script/models/skillModel.js"></script>
+    <script src="assets/script/models/tagModel.js"></script>
+    <script src="assets/script/collections/skillsCollection.js"></script>
+    <script src="assets/script/collections/tagsCollection.js"></script>
+    <script src="assets/script/views/skillView.js"></script>
+    <script src="assets/script/views/skillListView.js"></script>
     <script src="assets/script/routers/router.js"></script>
     <script src="assets/script/main.js"></script>
     

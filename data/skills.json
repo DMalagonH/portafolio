@@ -1,0 +1,129 @@
+[
+	{
+		"title": 		"PHP",
+		"percent":		"90",
+		"categories":	[
+			"Lenguajes",
+			"Backend"
+		]
+	},
+	{
+		"title": 		"JavaScript",
+		"percent":		"75",
+		"categories":	[
+			"Frameworks",
+			"Frontend"
+		]
+	},
+	{
+		"title": 		"Symfony2",
+		"percent":		"90",
+		"categories":	[
+			"Frameworks",
+			"Backend"
+		]
+	},
+	{
+		"title": 		"AWS",
+		"percent":		"70",
+		"categories":	[
+			"Administración de servidores",
+			"Backend"
+		]
+	},
+	{
+		"title": 		"HTML5",
+		"percent":		"70",
+		"categories":	[
+			"Frontend"
+		]
+	},
+	{
+		"title": 		"CSS3",
+		"percent":		"60",
+		"categories":	[
+			"Frontend"
+		]
+	},
+	{
+		"title": 		"jQuery",
+		"percent":		"70",
+		"categories":	[
+			"Frameworks",
+			"Frontend"
+		]
+	},
+	{
+		"title": 		"BackboneJS",
+		"percent":		"75",
+		"categories":	[
+			"Frameworks",
+			"Frontend"
+		]
+	},
+	{
+		"title": 		"UnderscoreJS",
+		"percent":		"65",
+		"categories":	[
+			"Frameworks",
+			"Frontend"
+		]
+	},
+	{
+		"title": 		"GIT",
+		"percent":		"90",
+		"categories":	[
+			"Herramientas de desarrollo"
+		]
+	},
+	{
+		"title": 		"NodeJS",
+		"percent":		"40",
+		"categories":	[
+			"Lenguajes",
+			"Frameworks",
+			"Backend"
+		]
+	},
+	{
+		"title": 		"MySQL",
+		"percent":		"85",
+		"categories":	[
+			"Bases de datos",
+			"Backend"
+		]
+	},
+	{
+		"title": 		"MongoDB",
+		"percent":		"40",
+		"categories":	[
+			"Bases de datos",
+			"Backend"
+		]
+	},
+	{
+		"title": 		"Ubuntu",
+		"percent":		"65",
+		"categories":	[
+			"Sistemas operativos",
+			"Backend",
+			"Administración de servidores"
+		]
+	},
+	{
+		"title": 		"Java",
+		"percent":		"60",
+		"categories":	[
+			"Lenguajes",
+			"Backend"
+		]
+	},
+	{
+		"title": 		".NET",
+		"percent":		"50",
+		"categories":	[
+			"Lenguajes",
+			"Backend"
+		]
+	}
+]
