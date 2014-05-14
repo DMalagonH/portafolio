@@ -1,7 +1,8 @@
 Portfolio.Router = Backbone.Router.extend({
 	routes: {
 		"": "index",
-		"portfolio": "portfolio"
+		"portafolio": "portfolio",
+		"contacto": "contact"
 	},
 	initialize: function () {
 		// User profile
@@ -19,6 +20,9 @@ Portfolio.Router = Backbone.Router.extend({
 	// Index functions
 	index: function(){
 		console.info("Index");
+
+		// display section tag with id me
+		this.displaySection("me");
 
 		// fetch user info
 		this.fetchUserProfile();
@@ -72,12 +76,27 @@ Portfolio.Router = Backbone.Router.extend({
 		console.log(this.skillCategories);
 	},
 
+	displaySection: function(section_name){
+		$("section.section-page").hide();
+
+		$("section#"+section_name).show();
+	},
 
 	// Portfolio functions
 	portfolio: function(){
 		console.info("Portafolio");
+
+		// display section tag with id portfolio
+		this.displaySection("portfolio");
 	},
 
 
+	// Contact functions
+	contact: function(){
+		console.info("Portafolio");
+
+		// display section tag with id contact
+		this.displaySection("contact");
+	},
 
 });
