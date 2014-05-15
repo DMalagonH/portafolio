@@ -9,9 +9,10 @@ Portfolio.Router = Backbone.Router.extend({
 		this.user = new Portfolio.Models.UserModel();
 
 		// User skills
-		this.skillCollection = new Portfolio.Collections.SkillsCollection();
-		this.skillListView = new Portfolio.Views.SkillListView({ collection: this.skillCollection });
-		this.skillCategories = [];
+		this.skills = new Portfolio.Collections.SkillsCollection();
+		this.skillListView = new Portfolio.Views.SkillListView({ collection: this.skills });
+		this.skillCategories = new Portfolio.Collections.TagsCollection();
+
 
 
 		Backbone.history.start();
@@ -52,28 +53,37 @@ Portfolio.Router = Backbone.Router.extend({
 
 		// success response
 		xhr.done(function(response){
-			// reset skillCollection with json response
-			self.skillCollection.reset(response);
+			// reset skills with json response
+			self.skills.reset(response);
 
 			// get skill categories from skill collection
 			self.getSkillCategories();
 		});
 	},
 	getSkillCategories: function(){
-		var self = this;
+		
+		// categories array with first default category "Todo"
+		var categories_array = [{title: "Todo"}];
 
-		this.skillCollection.each(function(skill){
+		// search categories on skill collection
+		this.skills.each(function(skill){
 			_.each(skill.get("categories"), function(category){
 
-				// search if category already exists
-				if(!_.findWhere(self.skillCategories, category)){
-					self.skillCategories.push(category);
+				// search if category already exists in array
+				if(!_.findWhere(categories_array, {title: category})){
+					categories_array.push({title: category});
 				}
 			});
 		});
 
+		// set array skills on collection
+		this.skillCategories.reset(categories_array);
 
-		console.log(this.skillCategories);
+		// create view for categories
+		var tagsView = new Portfolio.Views.TagsListView({collection: this.skillCategories, el: $(".skill-tags")});
+
+		// render view
+		tagsView.render();
 	},
 
 	displaySection: function(section_name){

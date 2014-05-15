@@ -1,8 +1,4 @@
 Portfolio.Views.TagsListView = Backbone.View.extend({
-	initialize: function () {
-		this.listenTo(this.collection, "reset", this.render, this);
-	},
-
 	render: function () {
 		this.collection.forEach(this.addOne, this);
 	},

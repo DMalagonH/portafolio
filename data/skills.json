@@ -54,7 +54,7 @@
 		]
 	},
 	{
-		"title": 		"BackboneJS",
+		"title": 		"Backbone",
 		"percent":		"75",
 		"categories":	[
 			"Frameworks",
@@ -62,7 +62,7 @@
 		]
 	},
 	{
-		"title": 		"UnderscoreJS",
+		"title": 		"Underscore",
 		"percent":		"65",
 		"categories":	[
 			"Frameworks",
