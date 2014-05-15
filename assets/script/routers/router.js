@@ -42,7 +42,9 @@ Portfolio.Router = Backbone.Router.extend({
 			// set user properties from response 
 			self.user.set(response);
 
-			console.log(self.user.toJSON());
+			// render user profile
+            var userView = new Portfolio.Views.UserView({model: self.user});
+            userView.renderProfile();
 		});
 	},
 	fetchSkills: function(){
