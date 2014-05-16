@@ -1,14 +1,14 @@
 Portfolio.Views.UserView = Backbone.View.extend({
     
     renderProfile: function(){
-        var $img = $(".img-user");
-        var $user_name = $(".name-user");
-        var $career = $(".career-user");
-        var $second_career = $(".second-career-user");
+        var $img = $(".user-img");
+        var $user_name = $(".user-name");
+        var $career = $(".user-career");
+        var $second_career = $(".user-second-career");
         var $biography = $(".user-biography");
-        var $twitter = $(".twitter-user");
-        var $github = $(".github-user");
-        var $linkedin = $(".linkedin-user");
+        var $twitter = $(".user-twitter");
+        var $github = $(".user-github");
+        var $linkedin = $(".user-linkedin");
         
         $img.attr("src", this.model.get("avatar"));
         $user_name.text(this.model.get("name"));
@@ -18,5 +18,19 @@ Portfolio.Views.UserView = Backbone.View.extend({
         $twitter.attr("href", this.model.get("twitter"));
         $linkedin.attr("href", this.model.get("linkedin"));
         $github.attr("href", this.model.get("github"));
+    },
+    
+    renderContact: function(){
+        var $img = $(".user-img");
+        var $user_name = $(".user-name");
+        var $location = $(".user-location");
+        var $mobile = $(".user-mobile");
+        var $email = $(".user-email");
+        
+        $img.attr("src", this.model.get("avatar"));
+        $user_name.text(this.model.get("name"));
+        $location.text(this.model.get("location"));
+        $mobile.text(this.model.get("mobile"));
+        $email.text(this.model.get("email"));
     }
 });

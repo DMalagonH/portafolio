@@ -7,6 +7,7 @@ Portfolio.Router = Backbone.Router.extend({
 	initialize: function () {
 		// User profile
 		this.user = new Portfolio.Models.UserModel();
+        this.userView = new Portfolio.Views.UserView({model: this.user});
 
 		// User skills
 		this.skills = new Portfolio.Collections.SkillsCollection();
@@ -14,53 +15,75 @@ Portfolio.Router = Backbone.Router.extend({
 		this.skillCategories = new Portfolio.Collections.TagsCollection();
 
 
-
 		Backbone.history.start();
 	},
+    displaySection: function(section_name){
+		$("section.section-page").hide();
 
+		$("section#"+section_name).show();
+	},
+    
 	// Index functions
 	index: function(){
-		console.info("Index");
-
+        var self = this;
+        
 		// display section tag with id me
 		this.displaySection("me");
 
 		// fetch user info
-		this.fetchUserProfile();
+		this.fetchUserProfile(function(){
+            // render user profile
+            self.userView.renderProfile();
+        });
 
 		// fetch skills list
 		this.fetchSkills();
 	},	
-	fetchUserProfile: function(){
-		var self = this;
+	fetchUserProfile: function(callback){
+        // if user is empty
+        if(this.user.get("name") === null){
+        
+            var self = this;
 
-		// ajax request for json user
-		var xhr = $.getJSON("data/user.json");
+            // ajax request for json user
+            var xhr = $.getJSON("data/user.json");
 
-		// success response
-		xhr.done(function(response){
-			// set user properties from response 
-			self.user.set(response);
+            // success response
+            xhr.done(function(response){
+                // set user properties from response 
+                self.user.set(response);
 
-			// render user profile
-            var userView = new Portfolio.Views.UserView({model: self.user});
-            userView.renderProfile();
-		});
+                // execute callback
+                if(typeof(callback) === "function"){
+                    callback();
+                }
+            });
+        }
+        else{
+            // execute callback
+            if(typeof(callback) === "function"){
+                callback();
+            }
+        }
 	},
 	fetchSkills: function(){
-		var self = this;
+        // if skill collections is empty
+        if(this.skills.length === 0){
+        
+            var self = this;
 
-		// ajax request for json skills
-		var xhr = $.getJSON("data/skills.json");
+            // ajax request for json skills
+            var xhr = $.getJSON("data/skills.json");
 
-		// success response
-		xhr.done(function(response){
-			// reset skills with json response
-			self.skills.reset(response);
+            // success response
+            xhr.done(function(response){
+                // reset skills with json response
+                self.skills.reset(response);
 
-			// get skill categories from skill collection
-			self.getSkillCategories();
-		});
+                // get skill categories from skill collection
+                self.getSkillCategories();
+            });
+        }
 	},
 	getSkillCategories: function(){
 		
@@ -88,16 +111,10 @@ Portfolio.Router = Backbone.Router.extend({
 		tagsView.render();
 	},
 
-	displaySection: function(section_name){
-		$("section.section-page").hide();
-
-		$("section#"+section_name).show();
-	},
+	
 
 	// Portfolio functions
 	portfolio: function(){
-		console.info("Portafolio");
-
 		// display section tag with id portfolio
 		this.displaySection("portfolio");
 	},
@@ -105,10 +122,17 @@ Portfolio.Router = Backbone.Router.extend({
 
 	// Contact functions
 	contact: function(){
-		console.info("Portafolio");
-
+        var self = this;
+        
 		// display section tag with id contact
 		this.displaySection("contact");
+        
+        // fetch user info
+		this.fetchUserProfile(function(){
+            // render user profile
+            self.userView.renderContact();
+        });
+        
 	},
 
 });
