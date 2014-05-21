@@ -7,6 +7,9 @@ vendor-prefixes = webkit o ms moz official
 body
 	font-size 16px
 
+footer
+	padding 15px 0
+
 .intro-header
 	.container
 		.intro-message
@@ -33,6 +36,7 @@ section.section-page
 	display none;
 
 .skills
+	padding-bottom 50px
 	.section-heading
 		margin-bottom 10px
 	.skills-list
@@ -126,26 +130,25 @@ section.section-page
 					height auto
 			p
 				font-weight normal
-#contact
-	padding-bottom 50px
-	.image
-		text-align center
-		figure
-			img
-				width 200px
-				height auto
+
+.contact
+	padding 40px 0
 	.info
 		text-align center
+		.user-name
+			margin-top 0px
+			font-size 2.8em
 		.personal-info
+			font-size 1.25em
 			text-align left
 			list-style none
-			margin 0 auto
 			width 265px
-			padding 0 2.5em
+			padding 0
+			margin auto
 	.banner-social-buttons
-		float none
-		margin-top 2em
+		margin 2.5em auto 0
 		text-align center
+		float none
 
 		
 // Tablet			
@@ -183,13 +186,9 @@ section.section-page
 		section
 			&:first-child
 				padding-top 80px
-	#contact
-		.image
-			text-align right
-			figure
-				text-align right				
+	.contact
 		.info
+			padding-left 80px
 			text-align left
 			.personal-info
-				width initial
-				padding 0
+				margin 0
