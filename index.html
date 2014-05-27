@@ -161,26 +161,57 @@
     <section id="portfolio" class="section-page">  
 
         <!-- Important project -->
-        <section class="content-section-a">
+        <section class="content-section-a" id="important-project"></section> 
+
+        <!-- TEMPLATE Important project -->
+        <script type="text/template" id="important-project-tmpl">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                        <h2 class="section-heading">3D Device Mockups
-                            <br>by PSDCovers</h2>
-                        <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! <a target="_blank" href="http://www.psdcovers.com/">Visit their website</a> to download some of their awesome, free photoshop actions!</p>
+                        <h2 class="section-heading"><% print(title) %></h2>
+                        <p class="lead"><% print(description) %></p>
                         <div class="buttons">
-                            <a class="btn btn-danger ">Detalle</a>
-                            <a class="btn btn-danger ">Ver aplicación</a>
+                            <a class="btn btn-danger" href="#proyecto/<% print(id) %>">Detalle</a>
+                            <% if(link !== undefined && link !== null) { %>
+                                <a class="btn btn-danger" href="<% print(link) %>" target="_blank">Ver aplicación</a>
+                            <% } %>
                         </div>
                     </div>
                     <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="assets/img/doge.png" alt="">
+                        <img class="img-responsive" src="assets/img/<% print(image) %>" alt="">
                     </div>
                 </div>
             </div>
-        </section> 
+        </script>
 
         <!-- Projects timeline -->
+        <script type="text/template" id="project-list-tmpl">
+            <% _.each(projects,function(project){ %>
+                <article class="row project-item">
+                    <div class="col-lg-2">
+                        <a href="#">
+                            <figure class="project-img">
+                                <img src="assets/img/<% print(project.image) %>" alt="" />
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-lg-10 col-sm-12">
+                        <a href="#">
+                            <span class="title"><% print(project.title) %></span>
+                            -
+                            <span class="date"><% print(project.date) %></span>                                    
+                        </a>
+                        <p class="description"><% print(project.description) %></p>
+                        <div class="buttons">
+                            <a class="btn btn-danger" href="#proyecto/<% print(project.id) %>">Detalle</a>
+                            <% if(project.link !== undefined && project.link !== null) { %>
+                                <a class="btn btn-danger" href="<% print(project.link) %>" target="_blank">Ver aplicación</a>
+                            <% } %>
+                        </div>
+                    </div>
+                </article>
+            <% }) %>
+        </script>
         <section class="projects-timeline content-section-b">
             <div class="container">
                 <h2 class="section-heading">Linea de tiempo de proyectos</h2>
@@ -190,91 +221,8 @@
                     <span class="label label-primary">Altactic</span>
                     <span class="label label-primary">Personales</span>
                 </div>
-
-                <article class="row project-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="project-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <a href="#">
-                            <span class="title">Altactic</span>
-                            -
-                            <span class="date">2014</span>                                    
-                        </a>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                        <div class="buttons">
-                            <a class="btn btn-danger ">Detalle</a>
-                            <a class="btn btn-danger ">Ver aplicación</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="row project-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="project-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <a href="#">
-                            <span class="title">Altactic</span>
-                            -
-                            <span class="date">2014</span>                                    
-                        </a>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                        <div class="buttons">
-                            <a class="btn btn-danger ">Detalle</a>
-                            <a class="btn btn-danger ">Ver aplicación</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="row project-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="project-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <a href="#">
-                            <span class="title">Altactic</span>
-                            -
-                            <span class="date">2014</span>                                    
-                        </a>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                        <div class="buttons">
-                            <a class="btn btn-danger ">Detalle</a>
-                            <a class="btn btn-danger ">Ver aplicación</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="row project-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="project-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <a href="#">
-                            <span class="title">Altactic</span>
-                            -
-                            <span class="date">2014</span>                                    
-                        </a>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                        <div class="buttons">
-                            <a class="btn btn-danger ">Detalle</a>
-                            <a class="btn btn-danger ">Ver aplicación</a>
-                        </div>
-                    </div>
-                </article>
+                <!-- Project list container -->
+                <div class="project-list"></div>
             </div>
         </section>
 
@@ -384,13 +332,18 @@
     <script src="assets/script/models/userModel.js"></script>
     <script src="assets/script/models/skillModel.js"></script>
     <script src="assets/script/models/tagModel.js"></script>
+    <script src="assets/script/models/projectModel.js"></script>
     <script src="assets/script/collections/skillsCollection.js"></script>
     <script src="assets/script/collections/tagsCollection.js"></script>
+    <script src="assets/script/collections/projectsCollection.js"></script>
     <script src="assets/script/views/userView.js"></script>
     <script src="assets/script/views/skillView.js"></script>
+    <script src="assets/script/views/projectDetailView.js"></script>
+    <script src="assets/script/views/importantProjectView.js"></script>
     <script src="assets/script/views/skillListView.js"></script>
     <script src="assets/script/views/tagView.js"></script>
     <script src="assets/script/views/tagsListView.js"></script>
+    <script src="assets/script/views/projectsListView.js"></script>
     <script src="assets/script/routers/router.js"></script>
     <script src="assets/script/main.js"></script>
     

@@ -1,8 +1,7 @@
 Portfolio.Router = Backbone.Router.extend({
 	routes: {
 		"": "index",
-		"portafolio": "portfolio",
-		"contacto": "contact"
+		"portafolio": "portfolio"
 	},
 	initialize: function () {
 		// User profile
@@ -14,6 +13,9 @@ Portfolio.Router = Backbone.Router.extend({
 		this.skillListView = new Portfolio.Views.SkillListView({ collection: this.skills });
 		this.skillCategories = new Portfolio.Collections.TagsCollection();
 
+        // Projects
+        this.importantProject = new Portfolio.Models.ProjectModel();
+        this.projects = new Portfolio.Collections.ProjectsCollection();
 
 		Backbone.history.start();
 	},
@@ -117,22 +119,35 @@ Portfolio.Router = Backbone.Router.extend({
 	portfolio: function(){
 		// display section tag with id portfolio
 		this.displaySection("portfolio");
+        
+        // Fetch and render projects
+        this.fetchProjects();
 	},
 
+    fetchProjects: function(){
+        if(this.projects.length === 0){
+            var self = this;
 
-	// Contact functions
-	contact: function(){
-        var self = this;
-        
-		// display section tag with id contact
-		this.displaySection("contact");
-        
-        // fetch user info
-		this.fetchUserProfile(function(){
-            // render user profile
-            self.userView.renderContact();
-        });
-        
-	},
+            // ajax request for json projects
+            var xhr = $.getJSON("data/projects.json");
+
+            // success response
+            xhr.done(function(response){
+                // reset projects with json response
+                self.projects.reset(response);
+
+                // find important project
+                self.importantProject = self.projects.findWhere({"important": true});
+                
+                // Render important project
+                var importantProjectView = new Portfolio.Views.ImportantProjectView({model: self.importantProject});
+                importantProjectView.render();
+
+                // Render project list
+                var projectListView = new Portfolio.Views.ProjectsListView({collection: self.projects});
+                projectListView.render();
+            });
+        }
+    }
 
 });
