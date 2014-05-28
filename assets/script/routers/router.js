@@ -16,6 +16,7 @@ Portfolio.Router = Backbone.Router.extend({
         // Projects
         this.importantProject = new Portfolio.Models.ProjectModel();
         this.projects = new Portfolio.Collections.ProjectsCollection();
+        this.projectCategories = new Portfolio.Collections.TagsCollection();
 
 		Backbone.history.start();
 	},
@@ -24,6 +25,30 @@ Portfolio.Router = Backbone.Router.extend({
 
 		$("section#"+section_name).show();
 	},
+    getCategories: function(collection, categories_collection, el){
+        
+        // categories array with first default category "Todo"
+        var categories_array = [{title: "Todo"}];
+        
+        // search categories on projects collection
+        collection.each(function(item){
+            _.each(item.get("categories"), function(category){
+                // search if category already exists in array
+				if(!_.findWhere(categories_array, {title: category})){
+					categories_array.push({title: category});
+				}
+            });
+        });
+        
+        // reset categories collection
+        categories_collection.reset(categories_array);
+        
+        // create view for categories
+        var tagsView = new Portfolio.Views.TagsListView({collection: categories_collection, el: el});
+        
+        // render view
+        tagsView.render();
+    },
     
 	// Index functions
 	index: function(){
@@ -81,38 +106,12 @@ Portfolio.Router = Backbone.Router.extend({
             xhr.done(function(response){
                 // reset skills with json response
                 self.skills.reset(response);
-
-                // get skill categories from skill collection
-                self.getSkillCategories();
+                
+                // get and render project categories
+                self.getCategories(self.skills, self.skillCategories, $(".skill-tags"));                
             });
         }
 	},
-	getSkillCategories: function(){
-		
-		// categories array with first default category "Todo"
-		var categories_array = [{title: "Todo"}];
-
-		// search categories on skill collection
-		this.skills.each(function(skill){
-			_.each(skill.get("categories"), function(category){
-
-				// search if category already exists in array
-				if(!_.findWhere(categories_array, {title: category})){
-					categories_array.push({title: category});
-				}
-			});
-		});
-
-		// set array skills on collection
-		this.skillCategories.reset(categories_array);
-
-		// create view for categories
-		var tagsView = new Portfolio.Views.TagsListView({collection: this.skillCategories, el: $(".skill-tags")});
-
-		// render view
-		tagsView.render();
-	},
-
 	
 
 	// Portfolio functions
@@ -146,8 +145,11 @@ Portfolio.Router = Backbone.Router.extend({
                 // Render project list
                 var projectListView = new Portfolio.Views.ProjectsListView({collection: self.projects});
                 projectListView.render();
+                
+                // get and render project categories
+                self.getCategories(self.projects, self.projectCategories, $(".project-tags"));
             });
         }
-    }
-
+    },
+    
 });

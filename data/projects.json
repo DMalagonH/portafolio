@@ -13,7 +13,11 @@
                 "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
                 "image":        "ipad.png"
             }
-        ]     
+        ],
+        "categories":   [
+            "Universidad",
+            "Personales"
+        ]
     },
     {
         "id":           2,
@@ -29,7 +33,10 @@
                 "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
                 "image":        "ipad.png"
             }
-        ]     
+        ],
+        "categories":   [
+            "Profesionales"
+        ]    
     },
     {
         "id":           3,
@@ -45,6 +52,10 @@
                 "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
                 "image":        "ipad.png"
             }
+        ],
+        "categories":   [
+            "Universidad",
+            "Personales"
         ]     
     },
     {
@@ -61,6 +72,10 @@
                 "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
                 "image":        "ipad.png"
             }
+        ],
+        "categories":   [
+            "Universidad",
+            "Profesionales"
         ]     
     }
 ]
