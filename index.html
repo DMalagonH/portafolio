@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Diego Malagón</title>
+    <title>Portafolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -167,7 +167,10 @@
         <script type="text/template" id="important-project-tmpl">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <div class="col-lg-5 col-sm-6">
+                        <img class="img-responsive" src="assets/img/<% print(image) %>" alt="">
+                    </div>
+                    <div class="col-lg-5 col-md-offset-1 col-sm-6">
                         <h2 class="section-heading"><% print(title) %></h2>
                         <p class="lead"><% print(description) %></p>
                         <div class="buttons">
@@ -176,9 +179,6 @@
                                 <a class="btn btn-danger" href="<% print(link) %>" target="_blank">Ver aplicación</a>
                             <% } %>
                         </div>
-                    </div>
-                    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                        <img class="img-responsive" src="assets/img/<% print(image) %>" alt="">
                     </div>
                 </div>
             </div>
@@ -224,89 +224,54 @@
     </section>
 
     <!-- Project detail -->
-    <section id="project-detail" class="section-page">
+    <section id="project-detail" class="section-page"></section>
+
+    <!-- project detail template -->
+    <script type="text/template" id="project-detail-tmpl">
         <!-- Project header -->
         <section class="content-section-a project-header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-sm-6">
-                        <h2 class="section-heading">3D Device Mockups
-                            <br>by PSDCovers</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod interdum purus in dictum. In ac ultrices felis, quis rutrum sapien. Proin volutpat, nulla vitae ornare gravida, massa diam euismod lorem, eget pharetra mi velit eget tortor. Aliquam ac porttitor felis. Mauris sed lacus consectetur.</p>
+                        <h2 class="section-heading"><% print(title) %></h2>
+                        <p class="lead"><% print(description) %></p>
                         <div class="buttons">
-                            <a class="btn btn-info"><i class="icon-back"></i> Portafolio</a>
-                            <a class="btn btn-danger ">Ver aplicación</a>
+                            <a class="btn btn-info" href="#portafolio"><i class="icon-back"></i> Portafolio</a>
+                            <% if(link !== undefined && link !== null) { %>
+                                <a class="btn btn-danger " href="<% print(link) %>" target="_blank">Ver aplicación</a>
+                            <% } %>
                         </div>
                     </div>
                     <div class="col-lg-5 col-lg-offset-1  col-sm-6">
-                        <img class="img-responsive" src="assets/img/doge.png" alt="">
+                        <img class="img-responsive" src="assets/img/<% print(image) %>" alt="">
                     </div>
                 </div>
             </div>
         </section> 
-        
+
         <!-- Project features -->
         <section class="project-features content-section-b">
             <div class="container">
-                <h2 class="section-heading">Caracteristicas del projecto</h2>
+                <h2 class="section-heading">Caracteristicas del proyecto</h2>
                 
-                <article class="row feature-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="feature-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <span class="title">Altactic</span>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                    </div>
-                </article>
-                <article class="row feature-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="feature-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <span class="title">Altactic</span>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                    </div>
-                </article>
-                <article class="row feature-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="feature-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <span class="title">Altactic</span>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                    </div>
-                </article>
-                <article class="row feature-item">
-                    <div class="col-lg-2">
-                        <a href="#">
-                            <figure class="feature-img">
-                                <img src="assets/img/ipad.png" alt="" />
-                            </figure>
-                        </a>
-                    </div>
-                    <div class="col-lg-10 col-sm-12">
-                        <span class="title">Altactic</span>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer neque metus, interdum eget lorem non, rhoncus ultrices tellus. Integer ornare sit amet mi a euismod. Ut lacinia, quam ut accumsan ultricies, sapien enim ultrices tellus, et sollicitudin ligula risus vel eros. Praesent justo urna</p>
-                    </div>
-                </article>
-                
+                <% _.each(features, function(feature){ %> 
+                    <article class="row feature-item">
+                        <div class="col-lg-2">
+                            <a href="#">
+                                <figure class="feature-img">
+                                    <img src="assets/img/<% print(feature.image) %>" alt="" />
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-lg-10 col-sm-12">
+                            <span class="title"><% print(feature.title) %></span>
+                            <p class="description"><% print(feature.description) %></p>
+                        </div>
+                    </article>
+                <% }) %>
             </div>
         </section>
-        
-    </section>
+    </script>
 
     <footer>
         <div class="container">

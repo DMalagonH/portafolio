@@ -13,6 +13,9 @@ Portfolio.Views.UserView = Backbone.View.extend({
         var $github = $(".user-github");
         var $linkedin = $(".user-linkedin");
         
+        // document title
+        document.title = this.model.get("name");
+        
         $img.attr("src", this.model.get("avatar"));
         $user_name.text(this.model.get("name"));
         $career.text(this.model.get("career"));

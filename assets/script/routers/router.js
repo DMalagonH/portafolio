@@ -1,7 +1,8 @@
 Portfolio.Router = Backbone.Router.extend({
 	routes: {
-		"": "index",
-		"portafolio": "portfolio"
+		"": "indexAction",
+		"portafolio": "portfolioAction",
+        "proyecto/:id": "projectAction"
 	},
 	initialize: function () {
 		// User profile
@@ -17,12 +18,27 @@ Portfolio.Router = Backbone.Router.extend({
         this.importantProject = new Portfolio.Models.ProjectModel();
         this.projects = new Portfolio.Collections.ProjectsCollection();
         this.projectCategories = new Portfolio.Collections.TagsCollection();
+        
+		// fetch and render user info
+		this.fetchUserProfile();
+
+		// fetch and render skills list
+		this.fetchSkills();
+        
+        // fetch and render projects
+        this.fetchProjects();
 
 		Backbone.history.start();
 	},
     displaySection: function(section_name){
+        
+        // scroll to top
+        $(window).scrollTop(0);
+        
+        // hide sections
 		$("section.section-page").hide();
-
+        
+        // show section with id section_name
 		$("section#"+section_name).show();
 	},
     getCategories: function(collection, categories_collection, el){
@@ -47,26 +63,17 @@ Portfolio.Router = Backbone.Router.extend({
         var tagsView = new Portfolio.Views.TagsListView({collection: categories_collection, el: el});
         
         // render view
-        tagsView.render();
+        //tagsView.render();
     },
     
 	// Index functions
-	index: function(){
-        var self = this;
+	indexAction: function(){
         
 		// display section tag with id me
 		this.displaySection("me");
 
-		// fetch user info
-		this.fetchUserProfile(function(){
-            // render user profile
-            self.userView.renderProfile();
-        });
-
-		// fetch skills list
-		this.fetchSkills();
 	},	
-	fetchUserProfile: function(callback){
+	fetchUserProfile: function(){
         // if user is empty
         if(this.user.get("name") === null){
         
@@ -80,17 +87,9 @@ Portfolio.Router = Backbone.Router.extend({
                 // set user properties from response 
                 self.user.set(response);
 
-                // execute callback
-                if(typeof(callback) === "function"){
-                    callback();
-                }
+                // render user profile
+                self.userView.renderProfile();
             });
-        }
-        else{
-            // execute callback
-            if(typeof(callback) === "function"){
-                callback();
-            }
         }
 	},
 	fetchSkills: function(){
@@ -115,15 +114,11 @@ Portfolio.Router = Backbone.Router.extend({
 	
 
 	// Portfolio functions
-	portfolio: function(){
+	portfolioAction: function(){
 		// display section tag with id portfolio
 		this.displaySection("portfolio");
-        
-        // Fetch and render projects
-        this.fetchProjects();
 	},
-
-    fetchProjects: function(){
+    fetchProjects: function(callback){
         if(this.projects.length === 0){
             var self = this;
 
@@ -148,8 +143,49 @@ Portfolio.Router = Backbone.Router.extend({
                 
                 // get and render project categories
                 self.getCategories(self.projects, self.projectCategories, $(".project-tags"));
+                
+                self.executeCallback(callback);
             });
+        }
+        else{
+            this.executeCallback(callback);
+        }
+    },
+    executeCallback: function(callback){
+        if(typeof(callback) === "function"){
+            callback();
         }
     },
     
+    // Project detail functions
+    projectAction: function(id){
+        // display section tag with id portfolio
+		this.displaySection("project-detail");
+        
+        var self = this;
+        
+        // if not yet loaded projects collection
+        if(this.projects.length === 0){
+            // add event reset to projects collection
+            this.projects.on("reset", function(){
+                // fetch and render project
+                self.fetchProject(id);
+            });
+        }
+        else{
+            // fetch and render project
+            self.fetchProject(id);
+        }
+    },
+    fetchProject: function(id){
+        
+        var project = this.projects.get(id);
+        var view = new Portfolio.Views.ProjectDetailView({model: project});
+        
+        view.render();
+        
+        
+        
+        return this.projects.get(id);
+    },
 });
