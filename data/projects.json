@@ -1,16 +1,16 @@
 [
     {
         "id":           1,
-        "title":        "Proyecto test",
+        "title":        "Altactic",
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui.",
         "image":        "doge.png", 
-        "link":         "http://google.com",
+        "link":         "http://www.altactic.com",
         "date":         2014,
         "important":    true,
         "features":     [
             {
-                "title":        "feature1",
-                "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+                "title":        "",
+                "description":  "",
                 "image":        "ipad.png"
             },
             {
@@ -25,36 +25,35 @@
             }
         ],
         "categories":   [
-            "Universidad",
-            "Personales"
+            "Profesionales"
         ]
     },
     {
         "id":           2,
-        "title":        "Proyecto test2",
-        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+        "title":        "Portafolio",
+        "description":  "Proyecto no-backend hecho totalmente en Backbone.js ",
         "image":        "doge.png", 
         "link":         "http://google.com",
-        "date":         2013,
+        "date":         2014,
         "important":    false,
         "features":     [
             {
-                "title":        "feature1",
-                "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+                "title":        "Backbone.js",
+                "description":  "",
                 "image":        "ipad.png"
             }
         ],
         "categories":   [
-            "Profesionales"
+            "Personales"
         ]    
     },
     {
         "id":           3,
-        "title":        "Proyecto test3",
+        "title":        "Vocationet",
         "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
         "image":        "doge.png", 
-        "link":         "http://google.com",
-        "date":         2013,
+        "link":         "http://www.vocationet.com",
+        "date":         2014,
         "important":    false,
         "features":     [
             {
@@ -64,28 +63,46 @@
             }
         ],
         "categories":   [
-            "Universidad",
-            "Personales"
+            "Profesionales"
         ]     
     },
     {
         "id":           4,
-        "title":        "Proyecto test4",
-        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+        "title":        "SID",
+        "description":  "Sistema de Infomación de Doblaje: Aplicación web para el sistema de información de una reconocida compañia de doblaje. El doblaje consiste en traducir las voces de un material audiovisual como películas, documentales, etc. a un determinado idioma. La aplicación fue construida para llevar el registro de toda la información generada a través de todo el proceso doblaje en la compañia. Esta aplicación fue mi primer proyecto grande y también proyecto de grado de Tecnología de sistemas, el cual fue reconocido con una mención de honor como mejor proyecto de 2011 II en la Unipanamericana y publicado en la revista ... Lastimosamente no fueron destinados más recursos para dar finalidad al proyecto por lo cual quedo a un 90% de su construcción.",
         "image":        "doge.png", 
-        "link":         "http://google.com",
-        "date":         2012,
+        "link":         "http://www.diegomalagon.com/demos/sid",
+        "date":         2011,
         "important":    false,
         "features":     [
             {
-                "title":        "feature1",
-                "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+                "title":        "Control de información",
+                "description":  "La aplicación cuenta con un conjunto de formularios para el registro de información en cada paso del proceso de doblaje, iniciando desde una orden de trabajo, pasando por cuadros de cotrol para libretos y terminando en una factura interna por doblaje.",
                 "image":        "ipad.png"
-            }
+            },
+            {
+                "title":        "Asignación de recursos por doblaje",
+                "description":  "Para los proyectos que tiene la compañia se deben asignar las personas que participarán en el proceso, entre directores, asistentes, traductores, talentos (dobladores, aquellos que graban su voz), ingenieros de sonido, entre otros.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Fragmentación de libretos",
+                "description":  "Por cada doblaje realizado es necesario tener una lista de personajes y a cada uno asignar las lineas del libreto. Para esto la aplicación provee un cuadro de control donde le indica a cada talento (doblador) que lineas del libreto le pertenecen a su(s) personaje(s).",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Costos de proyectos",
+                "description":  "Durante los proyectos de doblaje la aplicación genera cuentas de cobro para las personas que no pertenecen a la nómina de la compañia, y de la misma forma genera un reporte de costos y una factura interna o provisional con todos los costos involucrados en el doblaje.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Aspectos técnicos",
+                "description":  "Este proyecto esta construido en su totalidad en PHP sin hacer uso de algún framework, tiene algunas funcionalidades en JavaScript e implementaciónes simples de AJAX y la base de datos esta sobre MySQL. La arquitectura de la aplicación es básica, no tiene ningún patrón de diseño pero su alcance es bastante amplio",
+                "image":        "ipad.png"
+            },
         ],
         "categories":   [
-            "Universidad",
-            "Profesionales"
+            "Universidad"
         ]     
     }
 ]
