@@ -1,5 +1,4 @@
 /nbproject/
 *.sublime-project
 *.sublime-workspace
-/assets/bower_components/
 *.log
