@@ -99,7 +99,7 @@
                 "title":        "Aspectos técnicos",
                 "description":  "Este proyecto esta construido en su totalidad en PHP sin hacer uso de algún framework, tiene algunas funcionalidades en JavaScript e implementaciónes simples de AJAX y la base de datos esta sobre MySQL. La arquitectura de la aplicación es básica, no tiene ningún patrón de diseño pero su alcance es bastante amplio",
                 "image":        "ipad.png"
-            },
+            }
         ],
         "categories":   [
             "Universidad"

@@ -90,6 +90,10 @@ Portfolio.Router = Backbone.Router.extend({
                 // render user profile
                 self.userView.renderProfile();
             });
+
+            xhr.error(function(response){
+                console.error(response);
+            });
         }
 	},
 	fetchSkills: function(){
@@ -109,6 +113,10 @@ Portfolio.Router = Backbone.Router.extend({
                 // get and render project categories
                 self.getCategories(self.skills, self.skillCategories, $(".skill-tags"));                
             });
+
+            xhr.error(function(response){
+                console.error(response);
+            });
         }
 	},
 	
@@ -119,12 +127,13 @@ Portfolio.Router = Backbone.Router.extend({
 		this.displaySection("portfolio");
 	},
     fetchProjects: function(callback){
+        
+
         if(this.projects.length === 0){
             var self = this;
 
             // ajax request for json projects
             var xhr = $.getJSON("data/projects.json");
-
             // success response
             xhr.done(function(response){
                 // reset projects with json response
@@ -145,6 +154,10 @@ Portfolio.Router = Backbone.Router.extend({
                 self.getCategories(self.projects, self.projectCategories, $(".project-tags"));
                 
                 self.executeCallback(callback);
+            });
+
+            xhr.error(function(response){
+                console.error(response);
             });
         }
         else{
