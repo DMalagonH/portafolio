@@ -31,15 +31,24 @@
     {
         "id":           2,
         "title":        "Portafolio",
-        "description":  "Proyecto no-backend hecho totalmente en Backbone.js ",
+        "description":  "Portafolio es un proyecto no-backend hecho totalmente en BackboneJS creado para publicar mi portafolio de proyectos como desarrollador web. También tuvo la intención de aplicar mis conocimientos de frontend adquiridos a lo largo de mi experiencia y cursos realizados en Mejorando.la.",
         "image":        "doge.png", 
-        "link":         "http://google.com",
         "date":         2014,
         "important":    false,
         "features":     [
             {
-                "title":        "Backbone.js",
-                "description":  "",
+                "title":        "Sitemap",
+                "description":  "Consta de 3 secciones: Un home que es una vista al perfil profesional, una linea de tiempo con la descripción y links de los proyectos y una vista detallada de cada proyecto donde se enlistan sus caracteristicas principales.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "BackboneJS",
+                "description":  "Es una aplicación no-backend hecha en BackboneJS, no tiene ningun lenguaje backend ni tampoco usa bases de datos. La información esta almacenada en archivos json que es obtenida a través de peticiones ajax.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Conceptos y tecnologías",
+                "description":  "Algunos de los conceptos y tecnologías que se intentaron aplicar en este desarrollo son: Desarrollo frontend, Diseño web, Responsive design, Mobile first, BackboneJS, Bootstrap, JQuery, JavaScript, CSS3, HTML5, entre otros.",
                 "image":        "ipad.png"
             }
         ],
@@ -50,15 +59,35 @@
     {
         "id":           3,
         "title":        "Vocationet",
-        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+        "description":  "Vocationet es un emprendimiento que consiste en brindar una plataforma online en orientación vocacional y profesional para estudiantes en los últimos años de colegio y/o que no tienen claro que carrera elegir. Participé en el equipo de desarrollo Altactic, empresa encargada del desarrollo de la primera fase del proyecto.",
         "image":        "doge.png", 
         "link":         "http://www.vocationet.com",
         "date":         2014,
         "important":    false,
         "features":     [
             {
-                "title":        "feature1",
-                "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+                "title":        "Sistema de autenticación",
+                "description":  "La aplicación cuenta con un sistema de autenticación de usuarios a través de facebook para estudiantes y linkedin para mentores, además tiene un sistema nativo para quienes no desean vincular sus cuentas de redes sociales con la aplicación.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Gamificación",
+                "description":  "Para incentivar el uso de la plataforma por los estudiantes se implemento una tablero de niveles por el cual el usuario va avanzando a medida que va pasando las pruebas dispuestas en él y recibe medallas segun el puntaje que acumule.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Plataforma para estudiantes",
+                "description":  "Los estudiantes ingresan a una plataforma donde deben contestar un conjunto de cuestionarios, elegir mentores para su orientación, agendar sesiones de orientación y comunicarce con sus mentores.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Plataforma para mentores",
+                "description":  "Los mentores ingresan a una plataforma donde pueden ver el progreso de sus estudiantes, calificar o aprobar sus pruebas y comunicarce con ellos.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Pagos online",
+                "description":  "Los estudiantes deben pagar por algunas funciones de la aplicación por lo que se implemento un sistema de pagos online que funciona con la plataforma PayU.",
                 "image":        "ipad.png"
             }
         ],
