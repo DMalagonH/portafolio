@@ -2,25 +2,45 @@
     {
         "id":           1,
         "title":        "Altactic",
-        "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui.",
+        "description":  "Altactic es un software social empresarial, producto insignia de la empresa con el mismo nombre, tiene como objetivo ser la mejor en su tipo en latinoamérica. Esta aplicación permite la colaboración y comunicación constante a los diferentes equipos de trabajo, a través de publicaciones, chat, gestor de proyectos, gestor de tareas, gestor de documentos, entre otros. Todo en un ambiente fresco y amigable donde cada uno puede aportar y opinar desde cualquier dispositivo con conexión a internet.",
         "image":        "doge.png", 
         "link":         "http://www.altactic.com",
         "date":         2014,
         "important":    true,
         "features":     [
             {
-                "title":        "",
-                "description":  "",
+                "title":        "Publicaciones",
+                "description":  "Todo lo que los demás publican aparece en la página de inicio donde el usuario puede comentar, hacer menciones de otras personas, indicar que le gusta la publicación.",
                 "image":        "ipad.png"
             },
             {
-                "title":        "feature1",
-                "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+                "title":        "Proyectos",
+                "description":  "Los proyectos son espacios donde se agrupan publicaciones, documentos y tareas que tienen un fin común. Los integrantes de estos espacios pueden compartir su trabajo de manera que se almacena todo un historial que puede ser consultado posteriormente y observar como se desarrollo el proyecto a través del tiempo.",
                 "image":        "ipad.png"
             },
             {
-                "title":        "feature1",
-                "description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor velit, bibendum quis egestas a, varius ut enim. Curabitur imperdiet non lacus eget consequat. Vestibulum venenatis tortor dolor, et viverra diam molestie a. Nam et nunc hendrerit, ornare nisi placerat, lacinia nunc. Vestibulum eu ullamcorper urna, vitae vestibulum arcu. In nulla velit, sollicitudin sit amet faucibus sed, tempor sit amet velit. Aliquam mi lectus, vulputate sed posuere ut, lacinia ut dui. Donec nec egestas mauris. Morbi nibh sapien, rhoncus sed augue et, eleifend molestie mauris. Nunc lobortis enim ligula, sit amet laoreet metus fermentum eu. Vestibulum sed libero sodales, ullamcorper ligula quis, adipiscing velit. Suspendisse sagittis ipsum nisi, non tristique sem fringilla vel. Aenean ornare convallis tellus, eu vestibulum nisi adipiscing eget. Proin nec leo nec augue dignissim ultrices. Donec eget mauris venenatis, mattis metus id, laoreet tellus.",
+                "title":        "Documentos",
+                "description":  "La aplicación cuenta con un gestor de documentos estandar con control de versiones, utilizado para el almacenamiento de archivos tanto como de los proyecto como de los usuarios individualmente.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Tareas",
+                "description":  "El control de las actividades que realiza cada persona y el tiempo que invierte en ellas se puede llevar facilmente en el módulo de tareas de Altactic. Con una sencilla lista las personas pueden organizar su agenda de la semana y ver que actividades que le asignan en su trabajo.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Comunicación entre usuarios",
+                "description":  "Los personas pueden relacionarce con sus compañeros de oficina marcandolos como colegas/amigos o siguiendolos, de esta manera pueden ver sus publicaciones y enterarse de los avances de su trabajo. Altactic tiene un sistema de mensajeria donde pueden enviar y recibir mensajes igual a un correo electrónico y también cuenta con un chat para mensajes instantaneos.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Reportes",
+                "description":  "Toda la información sobre los proyectos se consolida en varios reportes donde se puede ver la actividad de sus integrantes y sus costos.",
+                "image":        "ipad.png"
+            },
+            {
+                "title":        "Administrador",
+                "description":  "El módulo de administración permite controlar el entorno de la cuenta, gestionar los usuarios y sus permisos y configurar diferentes aspectos para personalizar la experiencia en Altactic.",
                 "image":        "ipad.png"
             }
         ],
