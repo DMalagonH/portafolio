@@ -64,12 +64,12 @@
             {
                 "title":        "BackboneJS",
                 "description":  "Es una aplicación no-backend hecha en BackboneJS, no tiene ningun lenguaje backend ni tampoco usa bases de datos. La información esta almacenada en archivos json que es obtenida a través de peticiones ajax.",
-                "image":        "ipad.png"
+                "image":        "gallery/backbone.png"
             },
             {
                 "title":        "Conceptos y tecnologías",
                 "description":  "Algunos de los conceptos y tecnologías que se intentaron aplicar en este desarrollo son: Desarrollo frontend, Diseño web, Responsive design, Mobile first, BackboneJS, Bootstrap, JQuery, JavaScript, CSS3, HTML5, entre otros.",
-                "image":        "ipad.png"
+                "image":        "gallery/html5_css3_javascript_responsive.png"
             }
         ],
         "categories":   [
@@ -88,12 +88,12 @@
             {
                 "title":        "Sistema de autenticación",
                 "description":  "La aplicación cuenta con un sistema de autenticación de usuarios a través de facebook para estudiantes y linkedin para mentores, además tiene un sistema nativo para quienes no desean vincular sus cuentas de redes sociales con la aplicación.",
-                "image":        "ipad.png"
+                "image":        "gallery/facebook_linkedin.jpg"
             },
             {
                 "title":        "Gamificación",
                 "description":  "Para incentivar el uso de la plataforma por los estudiantes se implemento una tablero de niveles por el cual el usuario va avanzando a medida que va pasando las pruebas dispuestas en él y recibe medallas segun el puntaje que acumule.",
-                "image":        "ipad.png"
+                "image":        "gallery/vocationet_mapa.png"
             },
             {
                 "title":        "Plataforma para estudiantes",
@@ -108,7 +108,7 @@
             {
                 "title":        "Pagos online",
                 "description":  "Los estudiantes deben pagar por algunas funciones de la aplicación por lo que se implemento un sistema de pagos online que funciona con la plataforma PayU.",
-                "image":        "ipad.png"
+                "image":        "gallery/payu.png"
             }
         ],
         "categories":   [
@@ -127,7 +127,7 @@
             {
                 "title":        "Control de información",
                 "description":  "La aplicación cuenta con un conjunto de formularios para el registro de información en cada paso del proceso de doblaje, iniciando desde una orden de trabajo, pasando por cuadros de cotrol para libretos y terminando en una factura interna por doblaje.",
-                "image":        "ipad.png"
+                "image":        "gallery/forms.jpg"
             },
             {
                 "title":        "Asignación de recursos por doblaje",
@@ -147,7 +147,7 @@
             {
                 "title":        "Aspectos técnicos",
                 "description":  "Este proyecto esta construido en su totalidad en PHP sin hacer uso de algún framework, tiene algunas funcionalidades en JavaScript e implementaciónes simples de AJAX y la base de datos esta sobre MySQL. La arquitectura de la aplicación es básica, no tiene ningún patrón de diseño pero su alcance es bastante amplio",
-                "image":        "ipad.png"
+                "image":        "gallery/php_mysql.gif"
             }
         ],
         "categories":   [
