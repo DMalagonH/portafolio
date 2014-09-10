@@ -11,37 +11,37 @@
             {
                 "title":        "Publicaciones",
                 "description":  "Todo lo que los demás publican aparece en la página de inicio donde el usuario puede comentar, hacer menciones de otras personas, indicar que le gusta la publicación.",
-                "image":        "ipad.png"
+                "image":        "gallery/altactic_publicaciones.png"
             },
             {
                 "title":        "Proyectos",
                 "description":  "Los proyectos son espacios donde se agrupan publicaciones, documentos y tareas que tienen un fin común. Los integrantes de estos espacios pueden compartir su trabajo de manera que se almacena todo un historial que puede ser consultado posteriormente y observar como se desarrollo el proyecto a través del tiempo.",
-                "image":        "ipad.png"
+                "image":        "gallery/altactic_proyectos.png"
             },
             {
                 "title":        "Documentos",
                 "description":  "La aplicación cuenta con un gestor de documentos estandar con control de versiones, utilizado para el almacenamiento de archivos tanto como de los proyecto como de los usuarios individualmente.",
-                "image":        "ipad.png"
+                "image":        "gallery/altactic_documentos.png"
             },
             {
                 "title":        "Tareas",
                 "description":  "El control de las actividades que realiza cada persona y el tiempo que invierte en ellas se puede llevar facilmente en el módulo de tareas de Altactic. Con una sencilla lista las personas pueden organizar su agenda de la semana y ver que actividades que le asignan en su trabajo.",
-                "image":        "ipad.png"
+                "image":        "gallery/altactic_tareas.png"
             },
             {
                 "title":        "Comunicación entre usuarios",
                 "description":  "Los personas pueden relacionarce con sus compañeros de oficina marcandolos como colegas/amigos o siguiendolos, de esta manera pueden ver sus publicaciones y enterarse de los avances de su trabajo. Altactic tiene un sistema de mensajeria donde pueden enviar y recibir mensajes igual a un correo electrónico y también cuenta con un chat para mensajes instantaneos.",
-                "image":        "ipad.png"
+                "image":        "gallery/comunicacion.png"
             },
             {
                 "title":        "Reportes",
                 "description":  "Toda la información sobre los proyectos se consolida en varios reportes donde se puede ver la actividad de sus integrantes y sus costos.",
-                "image":        "ipad.png"
+                "image":        "gallery/altactic_reportes.png"
             },
             {
                 "title":        "Administrador",
                 "description":  "El módulo de administración permite controlar el entorno de la cuenta, gestionar los usuarios y sus permisos y configurar diferentes aspectos para personalizar la experiencia en Altactic.",
-                "image":        "ipad.png"
+                "image":        "gallery/admin.png"
             }
         ],
         "categories":   [
@@ -59,7 +59,7 @@
             {
                 "title":        "Sitemap",
                 "description":  "Consta de 3 secciones: Un home que es una vista al perfil profesional, una linea de tiempo con la descripción y links de los proyectos y una vista detallada de cada proyecto donde se enlistan sus caracteristicas principales.",
-                "image":        "ipad.png"
+                "image":        "gallery/sitemap.svg"
             },
             {
                 "title":        "BackboneJS",
@@ -80,7 +80,7 @@
         "id":           3,
         "title":        "Vocationet",
         "description":  "Vocationet es un emprendimiento que consiste en brindar una plataforma online en orientación vocacional y profesional para estudiantes en los últimos años de colegio y/o que no tienen claro que carrera elegir. Participé en el equipo de desarrollo Altactic, empresa encargada del desarrollo de la primera fase del proyecto.",
-        "image":        "doge.png", 
+        "image":        "gallery/vocationet_cientifico3.png", 
         "link":         "http://www.vocationet.com",
         "date":         2014,
         "important":    false,
@@ -98,12 +98,12 @@
             {
                 "title":        "Plataforma para estudiantes",
                 "description":  "Los estudiantes ingresan a una plataforma donde deben contestar un conjunto de cuestionarios, elegir mentores para su orientación, agendar sesiones de orientación y comunicarce con sus mentores.",
-                "image":        "ipad.png"
+                "image":        "gallery/vocationet_diagnostico.png"
             },
             {
                 "title":        "Plataforma para mentores",
                 "description":  "Los mentores ingresan a una plataforma donde pueden ver el progreso de sus estudiantes, calificar o aprobar sus pruebas y comunicarce con ellos.",
-                "image":        "ipad.png"
+                "image":        "gallery/vocationet_calendario.png"
             },
             {
                 "title":        "Pagos online",
