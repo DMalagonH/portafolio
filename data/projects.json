@@ -3,9 +3,9 @@
         "id":           1,
         "title":        "Altactic",
         "description":  "Altactic es un software social empresarial, producto insignia de la empresa con el mismo nombre, tiene como objetivo ser la mejor en su tipo en latinoamérica. Esta aplicación permite la colaboración y comunicación constante a los diferentes equipos de trabajo, a través de publicaciones, chat, gestor de proyectos, gestor de tareas, gestor de documentos, entre otros. Todo en un ambiente fresco y amigable donde cada uno puede aportar y opinar desde cualquier dispositivo con conexión a internet.",
-        "image":        "doge.png", 
+        "image":        "gallery/altactic_screen.png", 
         "link":         "http://www.altactic.com",
-        "date":         2014,
+        "date":         "2012 - 2014",
         "important":    true,
         "features":     [
             {
@@ -52,7 +52,7 @@
         "id":           2,
         "title":        "Portafolio",
         "description":  "Portafolio es un proyecto no-backend hecho totalmente en BackboneJS creado para publicar mi portafolio de proyectos como desarrollador web. También tuvo la intención de aplicar mis conocimientos de frontend adquiridos a lo largo de mi experiencia y cursos realizados en Mejorando.la.",
-        "image":        "doge.png", 
+        "image":        "gallery/portafolio_home2.png", 
         "date":         2014,
         "important":    false,
         "features":     [
@@ -82,7 +82,7 @@
         "description":  "Vocationet es un emprendimiento que consiste en brindar una plataforma online en orientación vocacional y profesional para estudiantes en los últimos años de colegio y/o que no tienen claro que carrera elegir. Participé en el equipo de desarrollo Altactic, empresa encargada del desarrollo de la primera fase del proyecto.",
         "image":        "gallery/vocationet_cientifico3.png", 
         "link":         "http://www.vocationet.com",
-        "date":         2014,
+        "date":         "2013 - 2014",
         "important":    false,
         "features":     [
             {
@@ -119,7 +119,7 @@
         "id":           4,
         "title":        "SID",
         "description":  "Sistema de Infomación de Doblaje: Aplicación web para el sistema de información de una reconocida compañia de doblaje. El doblaje consiste en traducir las voces de un material audiovisual como películas, documentales, etc. a un determinado idioma. La aplicación fue construida para llevar el registro de toda la información generada a través de todo el proceso doblaje en la compañia. Esta aplicación fue mi primer proyecto grande y también proyecto de grado de Tecnología de sistemas, el cual fue reconocido con una mención de honor como mejor proyecto de 2011 II en la Unipanamericana y publicado en la revista ... Lastimosamente no fueron destinados más recursos para dar finalidad al proyecto por lo cual quedo a un 90% de su construcción.",
-        "image":        "doge.png", 
+        "image":        "gallery/sid_home.png", 
         "link":         "http://www.diegomalagon.com/demos/sid",
         "date":         2011,
         "important":    false,
@@ -132,17 +132,17 @@
             {
                 "title":        "Asignación de recursos por doblaje",
                 "description":  "Para los proyectos que tiene la compañia se deben asignar las personas que participarán en el proceso, entre directores, asistentes, traductores, talentos (dobladores, aquellos que graban su voz), ingenieros de sonido, entre otros.",
-                "image":        "ipad.png"
+                "image":        "gallery/sid_workorder.png"
             },
             {
                 "title":        "Fragmentación de libretos",
                 "description":  "Por cada doblaje realizado es necesario tener una lista de personajes y a cada uno asignar las lineas del libreto. Para esto la aplicación provee un cuadro de control donde le indica a cada talento (doblador) que lineas del libreto le pertenecen a su(s) personaje(s).",
-                "image":        "ipad.png"
+                "image":        "gallery/sid_desglose.png"
             },
             {
                 "title":        "Costos de proyectos",
                 "description":  "Durante los proyectos de doblaje la aplicación genera cuentas de cobro para las personas que no pertenecen a la nómina de la compañia, y de la misma forma genera un reporte de costos y una factura interna o provisional con todos los costos involucrados en el doblaje.",
-                "image":        "ipad.png"
+                "image":        "gallery/sid_presupuesto.png"
             },
             {
                 "title":        "Aspectos técnicos",
