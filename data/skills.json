@@ -1,7 +1,7 @@
 [
 	{
 		"title": 		"PHP",
-		"percent":		"90",
+		"percent":		"95",
 		"categories":	[
 			"Lenguajes",
 			"Backend"
@@ -21,6 +21,13 @@
 		"categories":	[
 			"Frameworks",
 			"Backend"
+		]
+	},
+	{
+		"title": 		"GIT",
+		"percent":		"90",
+		"categories":	[
+			"Herramientas de desarrollo"
 		]
 	},
 	{
@@ -54,6 +61,13 @@
 		]
 	},
 	{
+		"title": 		"Angular",
+		"percent":		"50",
+		"categories":	[
+			"Frameworks",
+			"Frontend"
+		]
+	},{
 		"title": 		"Backbone",
 		"percent":		"75",
 		"categories":	[
@@ -68,14 +82,7 @@
 			"Frameworks",
 			"Frontend"
 		]
-	},
-	{
-		"title": 		"GIT",
-		"percent":		"90",
-		"categories":	[
-			"Herramientas de desarrollo"
-		]
-	},
+	},	
 	{
 		"title": 		"NodeJS",
 		"percent":		"40",

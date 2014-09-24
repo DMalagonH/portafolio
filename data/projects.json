@@ -2,7 +2,7 @@
     {
         "id":           1,
         "title":        "Altactic",
-        "description":  "Altactic es un software social empresarial, producto insignia de la empresa con el mismo nombre, tiene como objetivo ser la mejor en su tipo en latinoamérica. Esta aplicación permite la colaboración y comunicación constante a los diferentes equipos de trabajo, a través de publicaciones, chat, gestor de proyectos, gestor de tareas, gestor de documentos, entre otros. Todo en un ambiente fresco y amigable donde cada uno puede aportar y opinar desde cualquier dispositivo con conexión a internet.",
+        "description":  "Altactic es un software social empresarial, producto insignia de la empresa con el mismo nombre, tiene como objetivo ser la mejor en su tipo en latinoamérica. Esta aplicación permite la colaboración y comunicación constante entre los diferentes equipos de trabajo, a través de publicaciones, chat, gestor de proyectos, gestor de tareas, gestor de documentos, entre otros. Todo en un ambiente fresco y amigable donde cada uno puede aportar y opinar desde cualquier dispositivo con conexión a internet.",
         "image":        "gallery/altactic_screen.png", 
         "link":         "http://www.altactic.com",
         "date":         "2012 - 2014",
@@ -10,27 +10,27 @@
         "features":     [
             {
                 "title":        "Publicaciones",
-                "description":  "Todo lo que los demás publican aparece en la página de inicio donde el usuario puede comentar, hacer menciones de otras personas, indicar que le gusta la publicación.",
+                "description":  "Todo lo que las personas publican aparece en la página de inicio, donde el usuario puede comentar, hacer menciones de otras personas, indicar que le gusta la publicación.",
                 "image":        "gallery/altactic_publicaciones.png"
             },
             {
                 "title":        "Proyectos",
-                "description":  "Los proyectos son espacios donde se agrupan publicaciones, documentos y tareas que tienen un fin común. Los integrantes de estos espacios pueden compartir su trabajo de manera que se almacena todo un historial que puede ser consultado posteriormente y observar como se desarrollo el proyecto a través del tiempo.",
+                "description":  "Los proyectos son espacios donde se agrupan publicaciones, documentos y tareas que tienen un fin común. Los integrantes de estos espacios pueden compartir su trabajo de manera que se almacena todo un historial que puede ser consultado posteriormente y observar como se desarrolló el proyecto a través del tiempo.",
                 "image":        "gallery/altactic_proyectos.png"
             },
             {
                 "title":        "Documentos",
-                "description":  "La aplicación cuenta con un gestor de documentos estandar con control de versiones, utilizado para el almacenamiento de archivos tanto como de los proyecto como de los usuarios individualmente.",
+                "description":  "La aplicación cuenta con un gestor de documentos estandar, con control de versiones, utilizado para el almacenamiento de archivos, tanto como de los proyecto como de los usuarios individualmente.",
                 "image":        "gallery/altactic_documentos.png"
             },
             {
                 "title":        "Tareas",
-                "description":  "El control de las actividades que realiza cada persona y el tiempo que invierte en ellas se puede llevar facilmente en el módulo de tareas de Altactic. Con una sencilla lista las personas pueden organizar su agenda de la semana y ver que actividades que le asignan en su trabajo.",
+                "description":  "El control de las actividades que realiza cada persona y el tiempo que invierte en ellas se puede llevar facilmente en el módulo de tareas de Altactic. Con una sencilla lista las personas pueden organizar su agenda de la semana y ver que actividades le asignan en su trabajo.",
                 "image":        "gallery/altactic_tareas.png"
             },
             {
                 "title":        "Comunicación entre usuarios",
-                "description":  "Los personas pueden relacionarce con sus compañeros de oficina marcandolos como colegas/amigos o siguiendolos, de esta manera pueden ver sus publicaciones y enterarse de los avances de su trabajo. Altactic tiene un sistema de mensajeria donde pueden enviar y recibir mensajes igual a un correo electrónico y también cuenta con un chat para mensajes instantaneos.",
+                "description":  "Los personas pueden relacionarce con sus compañeros de oficina marcandolos como colegas/amigos o siguiéndolos, de esta manera pueden ver sus publicaciones y enterarse de los avances de su trabajo. Altactic tiene un sistema de mensajeria donde pueden enviar y recibir mensajes igual a un correo electrónico y también cuenta con un chat para mensajes instantaneos.",
                 "image":        "gallery/comunicacion.png"
             },
             {
@@ -51,7 +51,7 @@
     {
         "id":           2,
         "title":        "Portafolio",
-        "description":  "Portafolio es un proyecto no-backend hecho totalmente en BackboneJS creado para publicar mi portafolio de proyectos como desarrollador web. También tuvo la intención de aplicar mis conocimientos de frontend adquiridos a lo largo de mi experiencia y cursos realizados en Mejorando.la.",
+        "description":  "Portafolio es un proyecto no-backend hecho totalmente en BackboneJS creado para publicar mi portafolio de proyectos como desarrollador web. También tuvo la intención de aplicar una pequeña parte de mis conocimientos de frontend adquiridos a lo largo de mi experiencia y cursos realizados en Mejorando.la.",
         "image":        "gallery/portafolio_home2.png", 
         "date":         2014,
         "important":    false,
@@ -120,7 +120,6 @@
         "title":        "SID",
         "description":  "Sistema de Infomación de Doblaje: Aplicación web para el sistema de información de una reconocida compañia de doblaje. El doblaje consiste en traducir las voces de un material audiovisual como películas, documentales, etc. a un determinado idioma. La aplicación fue construida para llevar el registro de toda la información generada a través de todo el proceso doblaje en la compañia. Esta aplicación fue mi primer proyecto grande y también proyecto de grado de Tecnología de sistemas, el cual fue reconocido con una mención de honor como mejor proyecto de 2011 II en la Unipanamericana y publicado en la revista ... Lastimosamente no fueron destinados más recursos para dar finalidad al proyecto por lo cual quedo a un 90% de su construcción.",
         "image":        "gallery/sid_home.png", 
-        "link":         "http://www.diegomalagon.com/demos/sid",
         "date":         2011,
         "important":    false,
         "features":     [
