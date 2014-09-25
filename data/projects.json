@@ -59,7 +59,7 @@
             {
                 "title":        "Sitemap",
                 "description":  "Consta de 3 secciones: Un home que es una vista al perfil profesional, una linea de tiempo con la descripción y links de los proyectos y una vista detallada de cada proyecto donde se enlistan sus caracteristicas principales.",
-                "image":        "gallery/sitemap.svg"
+                "image":        "gallery/sitemap.png"
             },
             {
                 "title":        "BackboneJS",
@@ -93,7 +93,7 @@
             {
                 "title":        "Gamificación",
                 "description":  "Para incentivar el uso de la plataforma por los estudiantes se implemento una tablero de niveles por el cual el usuario va avanzando a medida que va pasando las pruebas dispuestas en él y recibe medallas segun el puntaje que acumule.",
-                "image":        "gallery/vocationet_mapa.png"
+                "image":        "gallery/vocationet_mapa.jpg"
             },
             {
                 "title":        "Plataforma para estudiantes",
