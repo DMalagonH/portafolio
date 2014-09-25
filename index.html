@@ -187,19 +187,19 @@
             </div>
         </script>
 
-        <!-- Projects timeline -->
+        <!-- TEMPLATE Projects timeline -->
         <script type="text/template" id="project-list-tmpl">
             <% _.each(projects,function(project){ %>
                 <article class="row project-item">
                     <div class="col-lg-2">
-                        <a href="#">
+                        <a href="#proyecto/<% print(project.id) %>">
                             <figure class="project-img">
                                 <img src="assets/img/<% print(project.image) %>" alt="" />
                             </figure>
                         </a>
                     </div>
                     <div class="col-lg-10 col-sm-12">
-                        <a href="#">
+                        <a href="#proyecto/<% print(project.id) %>">
                             <span class="title"><% print(project.title) %></span>
                             -
                             <span class="date"><% print(project.date) %></span>                                    
@@ -260,11 +260,9 @@
                 <% _.each(features, function(feature){ %> 
                     <article class="row feature-item">
                         <div class="col-lg-2">
-                            <a href="#">
-                                <figure class="feature-img">
-                                    <img src="assets/img/<% print(feature.image) %>" alt="" />
-                                </figure>
-                            </a>
+                            <figure class="feature-img">
+                                <img src="assets/img/<% print(feature.image) %>" alt="" />
+                            </figure>
                         </div>
                         <div class="col-lg-10 col-sm-12">
                             <span class="title"><% print(feature.title) %></span>
