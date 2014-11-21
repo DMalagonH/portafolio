@@ -49,6 +49,35 @@
         ]
     },
     {
+        "id":           5,
+        "title":        "NotiJS",
+        "description":  "Sistema para envío y recepción de notificaciones de usuario en tiempo real. Es útil en aplicaciones multiusuario que requiren notificar sobre la actividad de otros usuarios o eventualidades que requieren atención. Es de facil integración a proyectos independientemente del lenguaje y puede ser modificado y adaptado a sus necesidades o requerimientos.",
+        "image":        "gallery/notijs.png", 
+        "link":         "http://notijs.herokuapp.com",
+        "date":         2014,
+        "important":    false,
+        "features":     [
+            {
+                "title":        "MEAN",
+                "description":  "NotiJS esta constrida bajo el esquema MEAN  MongoDB + Express + AngularJS + NodeJS con el fin de brindarle escalabilidad e independencia a cada módulo de la aplicación.",
+                "image":        "gallery/mean.jpg"
+            },
+            {
+                "title":        "API REST + Socket.io",
+                "description":  "El backend funciona como un API REST y adicionalmente hace uso de web sockets con socket.io para el envío de notificaciones en tiempo real.",
+                "image":        "gallery/socketio.png"
+            },
+            {
+                "title":        "AngularJS",
+                "description":  "El frontend esta construido con AngularJS conectado al API REST y al web socket. Esta aplicación frontend se encuentra totalmente independiente al backend. De la misma forma puede ser adaptado a las necesidades del proyecto y su interface gráfica puede ser adaptada al template usado sin ningún problema.",
+                "image":        "gallery/angular.png"
+            }
+        ],
+        "categories":   [
+            "Personales"
+        ]    
+    },
+    {
         "id":           2,
         "title":        "Portafolio",
         "description":  "Portafolio es un proyecto no-backend hecho totalmente en BackboneJS creado para publicar mi portafolio de proyectos como desarrollador web. También tuvo la intención de aplicar una parte de mis conocimientos de frontend adquiridos a lo largo de mi experiencia y cursos realizados en Mejorando.la.",
